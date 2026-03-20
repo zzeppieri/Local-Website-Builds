@@ -1,0 +1,113 @@
+.services {
+  background: var(--bg);
+}
+
+.services-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+}
+
+.services-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  font-style: italic;
+  font-family: var(--font-display);
+}
+
+.services-category {
+  margin-bottom: 3rem;
+}
+
+.category-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Service card with hover animation and price reveal */
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--rose), var(--accent), var(--champagne));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(201, 149, 107, 0.15);
+  border-color: var(--rose-light);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.service-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Price reveal on hover */
+.service-price {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  margin-top: 0.25rem;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s 0.1s, transform 0.35s 0.1s;
+}
+
+.service-card:hover .service-price {
+  opacity: 1;
+  transform: translateY(0);
+}

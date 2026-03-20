@@ -1,0 +1,39 @@
+.footer {
+  background: var(--text);
+  border-top: 1px solid var(--border);
+  padding: 3rem 1.5rem;
+}
+
+.footer-inner {
+  text-align: center;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-link {
+  color: var(--champagne);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-link:hover {
+  color: var(--rose-light);
+  transform: translateY(-2px);
+}
+
+.footer-address {
+  color: var(--champagne);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.footer-copy {
+  color: var(--champagne);
+  font-size: 0.8rem;
+  opacity: 0.5;
+}

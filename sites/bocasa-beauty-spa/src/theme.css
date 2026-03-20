@@ -1,0 +1,27 @@
+:root {
+  /* Colors — Soft rose, champagne gold, ivory, muted mauve */
+  --bg: #fdf8f5;
+  --bg-light: #fff5f0;
+  --text: #3d2b2b;
+  --text-muted: #8a7070;
+  --accent: #c9956b;
+  --accent-hover: #b07d55;
+  --surface: #ffffff;
+  --border: #ecdad0;
+  --rose: #d4a0a0;
+  --rose-light: #f0d6d6;
+  --mauve: #b8929a;
+  --champagne: #e8d5b7;
+  --ivory: #fffcf7;
+  --shimmer: rgba(201, 149, 107, 0.15);
+
+  /* Typography */
+  --font-display: 'Bodoni Moda', 'Didot', 'Georgia', serif;
+  --font-body: 'Libre Franklin', 'Helvetica Neue', sans-serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 12px;
+}
