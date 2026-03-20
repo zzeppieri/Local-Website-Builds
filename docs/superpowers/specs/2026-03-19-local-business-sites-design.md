@@ -55,6 +55,40 @@ local-website-building/
 └── docs/
 ```
 
+### Scaffold Copy Procedure
+
+To create a new site from the scaffold:
+
+```bash
+# 1. Copy scaffold into sites/
+cp -r _scaffold/ sites/{slug}/
+
+# 2. Update package.json name
+cd sites/{slug}
+sed -i 's/"name": "scaffold"/"name": "{slug}"/' package.json
+
+# 3. Update index.html title and meta
+# (Agent replaces placeholders: %TITLE%, %DESCRIPTION%, %FONTS_URL%)
+
+# 4. Copy business data into the site
+cp ../../businesses/{slug}.json src/data.json
+
+# 5. Install dependencies
+npm install
+```
+
+### Data Injection
+
+Each site imports its business data as a static JSON file at build time:
+
+```jsx
+// src/App.jsx
+import data from './data.json';
+// data.name, data.phone, data.services, etc. available to all components
+```
+
+The `businesses/{slug}.json` file is copied into each site's `src/data.json` during scaffold setup. Components receive data as props from `App.jsx`, which reads from this import.
+
 ### Why Independent Apps (Not Monorepo)
 
 - Each site deploys separately to its own Vercel project
@@ -99,6 +133,52 @@ Every site includes this essential pack:
 - **Footer** — social links, copyright, address repeat
 
 No online ordering, no booking forms, no blog — keep scope tight for demos.
+
+### Scaffold Component Contracts
+
+Each scaffold component accepts props from `App.jsx` (which reads `data.json`):
+
+**Navbar** `({ name, links })`
+- `name`: string — business name displayed as logo text
+- `links`: array of `{ label, href }` — section anchor links (e.g., `#services`, `#contact`)
+- Behavior: Fixed top, CSS-only hamburger toggle on mobile (checkbox hack, no JS state). Smooth-scroll via `scroll-behavior: smooth` on `html`. References `--nav-height`, `--bg`, `--text`, `--accent`.
+
+**Hero** `({ name, tagline, ctaText, ctaHref })`
+- Full-viewport-height section with centered text
+- `ctaText`/`ctaHref`: primary CTA button (e.g., "View Menu" → `#services`, "Call Now" → `tel:...`)
+- References `--bg`, `--text`, `--accent`, `--font-display`, `--font-body`
+
+**Services** `({ services, type })`
+- `services`: array from `data.services` (categories with items)
+- `type`: `"menu"` (shows prices) or `"list"` (no prices)
+- Renders as responsive grid: `grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))`
+- References `--surface`, `--border`, `--text`, `--text-muted`
+
+**About** `({ about, features })`
+- `about`: string — paragraph text
+- `features`: array of strings — rendered as pill/tag badges
+- Simple centered text block with feature badges below
+
+**Contact** `({ phone, address, hours, email, googleMapsEmbedQuery })`
+- Two-column layout: left = hours + address + phone, right = Google Maps iframe
+- Maps iframe uses `loading="lazy"` to preserve Lighthouse performance
+- `tel:` link on phone, `mailto:` on email
+- References `--surface`, `--text`, `--accent`
+
+**Footer** `({ name, socialLinks, address })`
+- Social icons (SVG) linked to non-null socialLinks entries
+- Address and copyright line
+- References `--bg`, `--text-muted`, `--border`
+
+### Image & Asset Strategy
+
+Sites are CSS-driven with no photo dependencies:
+- **Hero backgrounds**: CSS gradients, patterns, or subtle SVG textures (no stock photos)
+- **Icons**: Inline SVG for social links and feature badges
+- **Logos**: Text-based (business name in display font) — no image logos needed
+- **No stock photos**: Avoids licensing issues and keeps bundles tiny
+
+If a business has real photos on their existing site or Google Business profile, they can be added as an enhancement after the initial build.
 
 ---
 
@@ -150,9 +230,33 @@ No online ordering, no booking forms, no blog — keep scope tight for demos.
 ### Scraping Strategy
 
 - Use WebFetch to pull content from each business's existing website
-- Supplement thin sites (Buckland Cleaners) with Google Maps listings, Yelp, Facebook
 - Scrape all 10 in one batch before building anything
-- Verify data completeness before committing design time
+
+**Fallback order** when primary site is thin or inaccessible:
+1. Business's existing website
+2. Google Maps / Google Business Profile
+3. Yelp listing
+4. Facebook page
+5. Manual entry (last resort — mark fields as needing verification)
+
+**Known scraping risks:**
+- Village Pizza (villagepizzaofwindsorlocks.com) — JS-rendered SPA, may return empty HTML. Fall back to Google/Yelp.
+- Bocasa Beauty Spa — bloated page, may timeout. Try Yelp first.
+
+**Data completeness checklist** (must pass before building a site):
+
+| Field | Required? | Minimum |
+|-------|-----------|---------|
+| `name` | REQUIRED | — |
+| `address` | REQUIRED | Full street address |
+| `phone` | REQUIRED | — |
+| `hours` | REQUIRED | At least weekday + weekend |
+| `services` | REQUIRED | At least 3 items |
+| `about` | REQUIRED | At least 2 sentences |
+| `tagline` | Optional | Can be generated from context |
+| `socialLinks` | Optional | At least 1 if available |
+| `email` | Optional | — |
+| `features` | Optional | — |
 
 ---
 
@@ -189,6 +293,26 @@ Each business JSON contains a `designBrief` that drives the frontend-design skil
 ### Font Strategy
 
 Fonts are NOT pre-assigned. The frontend-design skill selects fonts based on mood, industry, and inspiration. The only constraint: each brief includes "must not reuse fonts from other sites in this project" in the `avoidance` field, with a list of fonts already used by completed sites.
+
+### Pizza Site Differentiation
+
+Three of the 10 businesses are pizza shops. Each must feel completely distinct:
+
+- **Family Pizzeria**: warm, family-oriented, rustic-Italian. Think brick oven, amber tones, serif display fonts.
+- **Village Pizza**: modern minimalist, light palette, clean lines. Counter-service casual, not sit-down Italian.
+- **Windsor Pizza**: bold street-food energy, dark palette, condensed sans-serif. Urban, late-night, delivery-focused.
+
+### Frontend-Design Skill Integration
+
+The `frontend-design` skill is a Claude Code plugin (already installed) that guides creation of distinctive, production-grade frontends. When building each site, the agent:
+
+1. Reads the business's `designBrief` from its JSON file
+2. Invokes the frontend-design skill, which directs bold aesthetic choices: distinctive typography, cohesive color palettes, intentional spatial composition, and contextual motion/animation
+3. The skill ensures each site avoids generic AI aesthetics (no Inter/Roboto defaults, no purple-gradient-on-white cliches, no cookie-cutter layouts)
+4. Output: complete working React+Vite code with custom CSS that matches the design brief
+
+**Inputs to the skill:** business type, mood, color direction, inspiration, avoidance list, hero style, unique element.
+**Output from the skill:** fully themed `theme.css`, customized component markup, any CSS animations, and a distinctive visual identity.
 
 ---
 
@@ -239,6 +363,8 @@ Each agent: copies scaffold → reads business JSON → applies frontend-design 
 - Clean preview URLs
 - Unlimited projects on free tier
 
+**Limitation:** Vercel Hobby is for personal/non-commercial use. These demo sites are fine on Hobby, but if a client buys, their production site should move to Vercel Pro or alternative hosting (Netlify, Cloudflare Pages). Factor this into pricing conversations.
+
 ### Setup
 
 - Single git repo: `zzeppieri/local-biz-sites` on GitHub
@@ -258,7 +384,7 @@ Each agent: copies scaffold → reads business JSON → applies frontend-design 
 ### Automated
 
 1. `npm run build` exits 0 with no warnings
-2. Lighthouse audit: 90+ on Performance, Accessibility, Best Practices, SEO
+2. Lighthouse audit: 90+ on Performance (Maps iframe may lower this — acceptable if rest of page is fast), Accessibility, Best Practices, SEO
 
 ### Manual
 
@@ -299,6 +425,24 @@ Each agent: copies scaffold → reads business JSON → applies frontend-design 
 | 8 | Skyline Restaurant & Banquet | Italian/Steakhouse | Windsor Locks CT | WordPress/Avada, uninspired |
 | 9 | Joe the Plumber | Plumbing | South Windsor CT | Dated aesthetic, plugin bloat |
 | 10 | Day Hill Automotive | Auto Repair | Windsor CT | Older Bootstrap, generic |
+
+---
+
+## SEO Meta Tags (Per Site)
+
+Each site's `index.html` includes these meta tags, mapped from business JSON:
+
+```html
+<title>{name} — {tagline}</title>
+<meta name="description" content="{about} (first 160 chars)">
+<meta property="og:title" content="{name}">
+<meta property="og:description" content="{tagline}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://{slug}.vercel.app">
+<link rel="canonical" href="https://{slug}.vercel.app">
+```
+
+No `og:image` needed for CSS-driven sites (can be added later with screenshots).
 
 ---
 
