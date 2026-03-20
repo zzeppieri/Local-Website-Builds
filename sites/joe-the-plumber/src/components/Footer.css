@@ -8,20 +8,12 @@
 .footer-brand {
   margin-bottom: 1.25rem;
 }
-.footer-logo {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.footer-logo-icon {
-  font-size: 1.4rem;
-  color: var(--orange);
+.footer-logo-img {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 .footer-socials {
   display: flex;

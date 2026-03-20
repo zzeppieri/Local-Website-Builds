@@ -1,12 +1,19 @@
 import './Navbar.css'
 
+const LOGO_URL = 'https://calljoetheplumber.com/wp-content/uploads/2024/01/Joe-the-Plumber-Logo.png'
+
 export default function Navbar({ name, links, phone }) {
   return (
     <nav className="navbar">
       <div className="navbar-inner">
         <a href="#" className="navbar-logo">
-          <span className="logo-icon">&#9751;</span>
-          {name}
+          <img
+            src={LOGO_URL}
+            alt={`${name} logo`}
+            className="navbar-logo-img"
+            width="160"
+            height="48"
+          />
         </a>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <label htmlFor="nav-toggle" className="nav-hamburger" aria-label="Toggle menu">

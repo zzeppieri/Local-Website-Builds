@@ -23,6 +23,8 @@ const SOCIAL_ICONS = {
   ),
 }
 
+const LOGO_URL = 'https://calljoetheplumber.com/wp-content/uploads/2024/01/Joe-the-Plumber-Logo.png'
+
 export default function Footer({ name, socialLinks, address, licenses }) {
   const fullAddress = `${address.street}, ${address.city}, ${address.state} ${address.zip}`
   const activeSocials = Object.entries(socialLinks).filter(([, url]) => url)
@@ -31,10 +33,14 @@ export default function Footer({ name, socialLinks, address, licenses }) {
     <footer className="footer">
       <div className="section-inner footer-inner">
         <div className="footer-brand">
-          <span className="footer-logo">
-            <span className="footer-logo-icon">&#9751;</span>
-            {name}
-          </span>
+          <img
+            src={LOGO_URL}
+            alt={`${name} logo`}
+            className="footer-logo-img"
+            loading="lazy"
+            width="180"
+            height="54"
+          />
         </div>
         {activeSocials.length > 0 && (
           <div className="footer-socials">
