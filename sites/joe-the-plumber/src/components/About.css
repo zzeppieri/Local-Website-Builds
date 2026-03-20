@@ -1,0 +1,94 @@
+.about {
+  background: var(--bg);
+}
+.about-inner {
+  text-align: center;
+  max-width: 800px;
+}
+.about-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--bg-dark);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.about-text {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+.feature-pill {
+  display: inline-block;
+  padding: 0.5rem 1.15rem;
+  background: var(--accent-light);
+  border: 1px solid rgba(13, 94, 175, 0.2);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  animation: fadeInUp 0.4s ease-out both;
+  transition: background 0.2s, transform 0.2s;
+}
+.feature-pill:hover {
+  background: var(--accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.about-licenses {
+  margin-bottom: 2rem;
+}
+.licenses-heading {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--steel);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+.licenses-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.license-tag {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-family: 'Roboto Mono', monospace;
+  color: var(--steel);
+  letter-spacing: 0.03em;
+}
+
+.about-service-area {
+  background: var(--bg-dark);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-top: 1rem;
+}
+.service-area-heading {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+.service-area-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.7;
+}

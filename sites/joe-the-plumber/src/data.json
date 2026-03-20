@@ -1,0 +1,105 @@
+{
+  "slug": "joe-the-plumber",
+  "name": "Joe the Plumber",
+  "tagline": "Fast, Friendly, Reliable Plumbing Service — 24/7",
+  "type": "plumber",
+  "address": {
+    "street": "350 Chapel Road, Unit 1",
+    "city": "South Windsor",
+    "state": "CT",
+    "zip": "06074"
+  },
+  "secondaryLocation": {
+    "street": "215 Main St",
+    "city": "Niantic",
+    "state": "CT",
+    "zip": "06357"
+  },
+  "phone": "(860) 614-7157",
+  "phoneSecondary": "(860) 451-9969",
+  "email": null,
+  "website": "https://calljoetheplumber.com",
+  "hours": [
+    { "days": "Mon-Sun", "open": "24 Hours", "close": "24 Hours" }
+  ],
+  "hoursNote": "Open 24/7 — Emergency Plumbing Anytime",
+  "services": [
+    {
+      "category": "Residential Plumbing",
+      "items": [
+        { "name": "Kitchen Plumbing", "description": "Complete kitchen plumbing repair and installation including sinks, faucets, garbage disposals, and dishwasher connections", "price": null },
+        { "name": "Bathroom Plumbing", "description": "Full bathroom plumbing services including toilets, showers, bathtubs, and sink repair and installation", "price": null },
+        { "name": "Basement Plumbing", "description": "Basement plumbing repair, sump pumps, and water management solutions", "price": null },
+        { "name": "Laundry Room Plumbing", "description": "Washer hookups, utility sink installation, and drain line services", "price": null },
+        { "name": "Outdoor Plumbing", "description": "Hose bibs, irrigation connections, and exterior plumbing repair", "price": null }
+      ]
+    },
+    {
+      "category": "Water Heaters",
+      "items": [
+        { "name": "Water Heater Repair", "description": "Diagnosis and repair of all water heater types to restore hot water quickly", "price": null },
+        { "name": "Water Heater Replacement", "description": "Professional removal and installation of new water heaters including tankless options", "price": null }
+      ]
+    },
+    {
+      "category": "Drain & Sewer",
+      "items": [
+        { "name": "High-Pressure Hydro Jet Drain Cleaning", "description": "Advanced hydro jetting technology to clear stubborn clogs and buildup from drain lines", "price": null },
+        { "name": "Sewer & Drain Cleaning", "description": "Professional sewer and drain cleaning to restore proper flow", "price": null },
+        { "name": "Sewer & Drain Repair", "description": "Expert repair and replacement of damaged sewer and drain lines", "price": null },
+        { "name": "Sewer & Storm Drain Excavation", "description": "Full excavation services for sewer and storm drain replacement and repair", "price": null }
+      ]
+    },
+    {
+      "category": "Specialty Services",
+      "items": [
+        { "name": "Well Pump Installation & Repair", "description": "Complete well pump services including installation, repair, and maintenance", "price": null },
+        { "name": "Water Treatment Systems", "description": "Water filtration and treatment system installation for clean, safe water", "price": null },
+        { "name": "Gas Pipe Installation & Repair", "description": "Licensed gas pipe installation, repair, and safety inspections", "price": null },
+        { "name": "New Construction Plumbing", "description": "Full plumbing rough-in and finish for new construction and renovation projects", "price": null }
+      ]
+    },
+    {
+      "category": "Commercial Plumbing",
+      "items": [
+        { "name": "Commercial Plumbing Services", "description": "Full-service commercial plumbing repair, installation, and maintenance for businesses", "price": null }
+      ]
+    }
+  ],
+  "licenses": [
+    "PLM.0285743-P1",
+    "HTG.0397084-S1",
+    "HIC.0644636"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/CallJoeThePlumber",
+    "instagram": "https://www.instagram.com/calljoetheplumber",
+    "yelp": null,
+    "google": null,
+    "linkedin": "https://www.linkedin.com/company/joe-the-plumber-heating-cooling/",
+    "twitter": "https://twitter.com/calljoeplumber"
+  },
+  "googleMapsEmbedQuery": "Joe the Plumber, 350 Chapel Road, South Windsor, CT 06074",
+  "about": "Joe the Plumber is a family-owned plumbing company serving all of Connecticut with fast, friendly, and reliable service around the clock. Licensed, insured, and BBB accredited, they bring quality craftsmanship and honest service to every job — from emergency repairs to new construction plumbing. Their team is dedicated to leaving your home clean and your plumbing working perfectly, with no mess and no hassle.",
+  "serviceArea": "All of Connecticut, with primary coverage in Hartford County including South Windsor, East Windsor, Windsor, Enfield, Manchester, Vernon, Glastonbury, Hartford, and surrounding towns. Secondary office serves the Niantic shoreline area.",
+  "features": [
+    "24/7 Emergency Service",
+    "Family Owned & Operated",
+    "BBB Accredited",
+    "Licensed & Insured",
+    "Financing Available",
+    "Diamond Club Membership Program",
+    "Two Locations — South Windsor & Niantic",
+    "Serving All of Connecticut",
+    "No-Mess Guarantee"
+  ],
+  "designBrief": {
+    "industry": "Plumbing Services",
+    "mood": "reliable, professional, approachable, no-nonsense",
+    "colorDirection": "strong blue, white, safety orange accents, steel grey",
+    "inspiration": "Trustworthy tradesman. Clean, professional, emphasizes reliability and availability.",
+    "avoidance": "No cartoon plumbers. No clip art wrenches. No cheesy stock photos. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Clean background, bold sans-serif heading, prominent phone number CTA",
+    "uniqueElement": "Emergency service callout banner or animated service area map"
+  }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@600;700;800&display=swap');
+
+:root {
+  /* Colors — Joe the Plumber: strong blue, white, safety orange, steel grey */
+  --bg: #ffffff;
+  --bg-light: #f5f7fa;
+  --bg-dark: #0b2545;
+  --text: #1a1a2e;
+  --text-muted: #5a6377;
+  --text-on-dark: #f0f4f8;
+  --accent: #0d5eaf;
+  --accent-hover: #094a8c;
+  --accent-light: #e8f0fe;
+  --orange: #e8611a;
+  --orange-hover: #cf5212;
+  --orange-light: rgba(232, 97, 26, 0.1);
+  --surface: #ffffff;
+  --surface-alt: #f0f4f8;
+  --border: #d8dfe8;
+  --steel: #6b7b8d;
+  --steel-light: #8fa0b2;
+
+  /* Typography */
+  --font-display: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  --font-body: 'Roboto', 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes ripple {
+  0% { box-shadow: 0 0 0 0 rgba(232, 97, 26, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(232, 97, 26, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(232, 97, 26, 0); }
+}
+
+@keyframes drip {
+  0% { transform: translateY(-8px); opacity: 0; }
+  20% { opacity: 1; }
+  60% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(2px) scaleY(0.95); }
+  100% { transform: translateY(0); opacity: 1; }
+}

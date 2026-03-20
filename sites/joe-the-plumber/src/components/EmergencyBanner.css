@@ -1,0 +1,47 @@
+.emergency-banner {
+  background: var(--orange);
+  color: #ffffff;
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.emergency-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.emergency-pulse {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.emergency-text {
+  display: inline;
+}
+.emergency-text strong {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.emergency-phone {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.emergency-phone:hover {
+  color: #ffffff !important;
+  text-decoration-thickness: 3px;
+}
+
+@media (max-width: 768px) {
+  .emergency-banner {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "slug": "day-hill-automotive",
+  "name": "Day Hill Automotive Inc",
+  "tagline": "Trusted Auto Repair in Windsor Since 1979",
+  "type": "auto-repair",
+  "address": {
+    "street": "701 Day Hill Road",
+    "city": "Windsor",
+    "state": "CT",
+    "zip": "06095"
+  },
+  "phone": "(860) 607-0109",
+  "email": null,
+  "website": "https://dayhillauto.com",
+  "hours": [
+    { "days": "Mon-Fri", "open": "7:00 AM", "close": "5:00 PM" },
+    { "days": "Sat-Sun", "open": "Closed", "close": "Closed" }
+  ],
+  "services": [
+    {
+      "category": "Engine & Diagnostics",
+      "items": [
+        { "name": "Engine Diagnostics", "description": "Comprehensive engine diagnostics using advanced computer systems to identify issues accurately", "price": null },
+        { "name": "Computer Diagnostics", "description": "Full computerized vehicle scanning and diagnostic services", "price": null },
+        { "name": "Check Engine Light", "description": "Check engine light diagnosis and repair to resolve warning codes", "price": null },
+        { "name": "Tune-Up", "description": "Complete engine tune-up service to optimize performance and fuel efficiency", "price": null }
+      ]
+    },
+    {
+      "category": "Brake & Suspension",
+      "items": [
+        { "name": "Brake Repair & Service", "description": "Complete brake system inspection, repair, and replacement including pads, rotors, and calipers", "price": null },
+        { "name": "Steering & Suspension", "description": "Full steering and suspension diagnosis and repair for a smooth, safe ride", "price": null },
+        { "name": "Shocks & Struts", "description": "Shock absorber and strut replacement to restore ride comfort and handling", "price": null },
+        { "name": "Wheel Alignment", "description": "Precision wheel alignment to prevent uneven tire wear and improve handling", "price": null }
+      ]
+    },
+    {
+      "category": "Drivetrain & Transmission",
+      "items": [
+        { "name": "Transmission Repair", "description": "Transmission diagnosis, repair, and fluid service for automatic and manual transmissions", "price": null },
+        { "name": "Axle Repair", "description": "CV axle and drive axle inspection, repair, and replacement", "price": null },
+        { "name": "Clutch Repair & Service", "description": "Clutch diagnosis, repair, and replacement for manual transmission vehicles", "price": null }
+      ]
+    },
+    {
+      "category": "Electrical & Cooling",
+      "items": [
+        { "name": "Electrical System Service", "description": "Complete automotive electrical diagnosis and repair including wiring and components", "price": null },
+        { "name": "Alternator Repair & Service", "description": "Alternator testing, repair, and replacement to keep your charging system reliable", "price": null },
+        { "name": "Automotive AC Service & Repair", "description": "Air conditioning diagnosis, recharge, and repair for all vehicle makes", "price": null },
+        { "name": "Radiator Repair & Service", "description": "Radiator inspection, repair, and replacement to prevent overheating", "price": null }
+      ]
+    },
+    {
+      "category": "Fuel & Exhaust",
+      "items": [
+        { "name": "Fuel Injection Service", "description": "Fuel injector cleaning and service to restore engine performance", "price": null },
+        { "name": "Exhaust System Repair", "description": "Exhaust system inspection, repair, and replacement including mufflers and catalytic converters", "price": null }
+      ]
+    },
+    {
+      "category": "Routine Maintenance",
+      "items": [
+        { "name": "Oil Change", "description": "Conventional and synthetic oil change service with filter replacement", "price": null },
+        { "name": "Fluid Flushes", "description": "Transmission, coolant, brake, and power steering fluid flush services", "price": null },
+        { "name": "Tire Services", "description": "Tire rotation, balancing, and replacement services", "price": null },
+        { "name": "Timing Belt Replacement", "description": "Timing belt inspection and replacement to prevent costly engine damage", "price": null }
+      ]
+    },
+    {
+      "category": "Specialty Services",
+      "items": [
+        { "name": "4x4 Services", "description": "Four-wheel drive system service and repair including transfer cases and differentials", "price": null },
+        { "name": "Hybrid Vehicle Service", "description": "Specialized service and maintenance for hybrid vehicles", "price": null },
+        { "name": "Diesel Service", "description": "Diesel engine diagnostics, repair, and maintenance", "price": null },
+        { "name": "Pre-Purchase Inspection", "description": "Comprehensive vehicle inspection before you buy a used car", "price": null },
+        { "name": "Fleet Service", "description": "Commercial fleet maintenance and repair programs for businesses", "price": null }
+      ]
+    }
+  ],
+  "certifications": [
+    "NAPA AutoCare Center",
+    "ASE Certified Mechanics",
+    "BBB Accredited",
+    "AAA Affiliated",
+    "CarFax Certified"
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/DAYHILLAUTOMOTIVE",
+    "instagram": "https://www.instagram.com/dayhillautomotive",
+    "yelp": "https://www.yelp.com/biz/day-hill-automotive-windsor",
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Day Hill Automotive Inc, 701 Day Hill Road, Windsor, CT 06095",
+  "about": "Founded in 1979, Day Hill Automotive is a family-owned auto repair shop that has proudly served the Windsor, Connecticut community for over 45 years. Their ASE-certified mechanics specialize in domestic, foreign, and exotic vehicles, using current automotive technology to deliver high-quality repair and maintenance service. With honest communication during every repair process and a commitment to the safety of customers and their families, Day Hill Automotive has earned a stellar 4.9 out of 5 star rating from nearly 800 reviews.",
+  "reviews": {
+    "rating": 4.9,
+    "count": 787
+  },
+  "features": [
+    "Family Owned Since 1979",
+    "ASE Certified Mechanics",
+    "NAPA AutoCare Center",
+    "BBB Accredited",
+    "AAA Affiliated",
+    "4.9/5 Stars — 787+ Reviews",
+    "Domestic, Foreign & Exotic Vehicles",
+    "Hybrid & Diesel Service",
+    "Free WiFi in Waiting Room",
+    "After-Hours Drop-Off",
+    "Local Shuttle Service (7-9 AM)",
+    "NAPA 24-Month/24,000-Mile Warranty"
+  ],
+  "designBrief": {
+    "industry": "Auto Repair & Service",
+    "mood": "industrial, trustworthy, technical, modern",
+    "colorDirection": "gunmetal grey, electric blue accents, dark asphalt, white",
+    "inspiration": "Modern auto shop. Technical precision aesthetic. Trust signals front and center.",
+    "avoidance": "No generic car stock photos. No red/racing aesthetic. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Dark industrial background, technical sans-serif type, blue accent highlights",
+    "uniqueElement": "Animated service checklist or diagnostic code display effect"
+  }
+}
