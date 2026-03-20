@@ -1,0 +1,28 @@
+:root {
+  /* Colors — luxurious plum, blush, gold, cream palette */
+  --bg: #faf7f5;
+  --bg-light: #f3ede8;
+  --text: #2d1f2d;
+  --text-muted: #6b5a6b;
+  --accent: #6b2d5b;
+  --accent-hover: #843870;
+  --accent-light: #f0d6e8;
+  --gold: #b8943e;
+  --gold-light: #d4b766;
+  --blush: #e8c4c4;
+  --blush-light: #f5e1e1;
+  --cream: #fdf9f3;
+  --plum-deep: #3d1a35;
+  --surface: #ffffff;
+  --border: #e5d6da;
+
+  /* Typography — elegant serif display + refined body */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Jost', system-ui, sans-serif;
+
+  /* Layout */
+  --nav-height: 76px;
+  --section-padding: 6rem 1.5rem;
+  --max-width: 1140px;
+  --radius: 6px;
+}

@@ -1,0 +1,44 @@
+.about {
+  background: var(--cream);
+}
+.about-inner {
+  text-align: center;
+  max-width: 700px;
+}
+.about-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  color: var(--plum-deep);
+  margin-bottom: 0;
+}
+.about-text {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.9;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.feature-pill {
+  display: inline-block;
+  padding: 0.4rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.feature-pill:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+}
