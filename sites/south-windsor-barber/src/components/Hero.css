@@ -1,0 +1,114 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  padding-top: var(--nav-height);
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--cream) 0px,
+    var(--cream) 1px,
+    transparent 1px,
+    transparent 20px
+  );
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  padding: 0.4rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hero-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-divider-line {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.hero-scissors {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.hero-tagline {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--accent);
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.hero-cta:hover {
+  background: var(--accent-hover);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.hero-bottom-stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

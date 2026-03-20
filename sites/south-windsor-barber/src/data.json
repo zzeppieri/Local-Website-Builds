@@ -1,0 +1,71 @@
+{
+  "slug": "south-windsor-barber",
+  "name": "South Windsor Barber Shop",
+  "tagline": "A Gentleman's Haircut Experience Since 1927",
+  "type": "barber",
+  "address": {
+    "street": "22 Morgan Farms Dr",
+    "city": "South Windsor",
+    "state": "CT",
+    "zip": "06074"
+  },
+  "phone": "(860) 432-7720",
+  "email": null,
+  "website": "https://southwindsorbarbershopct.com",
+  "hours": [
+    { "days": "Mon", "open": "9:00 AM", "close": "6:30 PM" },
+    { "days": "Tue-Fri", "open": "9:00 AM", "close": "6:30 PM" },
+    { "days": "Sat-Sun", "open": "9:00 AM", "close": "4:30 PM" }
+  ],
+  "services": [
+    {
+      "category": "Haircuts",
+      "items": [
+        { "name": "Gentleman's Haircut", "description": "Classic men's haircut with hot steam towel and shoulder massage", "price": "$25" },
+        { "name": "Children's Haircut", "description": "Haircut for kids in a comfortable, welcoming environment", "price": "$18" },
+        { "name": "Senior Haircut", "description": "Haircut for senior gentlemen", "price": "$20" }
+      ]
+    },
+    {
+      "category": "Shaves & Facials",
+      "items": [
+        { "name": "Classic Straight Razor Shave", "description": "Traditional straight razor shave with hot lather and towels", "price": "$30" },
+        { "name": "Hot Towel Facial", "description": "Vintage men's hot towel facial treatment, a tradition since 1935", "price": "$35" },
+        { "name": "Haircut & Shave Combo", "description": "Full gentleman's haircut paired with a classic straight razor shave", "price": "$50" }
+      ]
+    },
+    {
+      "category": "Special Occasions",
+      "items": [
+        { "name": "Wedding Party Grooming", "description": "Grooming services for the groom and wedding party with group rates available", "price": "Call for pricing" },
+        { "name": "Beard Trim & Shape", "description": "Professional beard trimming and shaping", "price": "$15" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": null,
+    "instagram": null,
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "South+Windsor+Barber+Shop,+22+Morgan+Farms+Dr,+South+Windsor,+CT+06074",
+  "about": "South Windsor Barber Shop is the only barber shop in town affiliated with the original Professional Barber Shop in downtown Hartford, established in 1927. Owned by Christopher M. Rosa, a barber with over 25 years of experience, the shop offers luxury grooming services to help keep your hair and face healthy and looking great. Every service includes a complimentary hot steam towel and shoulder massage. Whether you prefer a contemporary style or a timeless classic look, South Windsor Barber Shop provides a comfortable, clean environment with complimentary beverages and flat-screen TVs. Walk-ins are welcome and appointments are accepted.",
+  "features": [
+    "Appointments & walk-ins welcome",
+    "Complimentary beverages",
+    "Flat-screen TVs",
+    "Complimentary hot steam towel with every service",
+    "Shoulder massage with every service",
+    "25+ years of barbering experience",
+    "Premium grooming products (American Crew, Clubman, Woody's)"
+  ],
+  "designBrief": {
+    "industry": "Barber Shop",
+    "mood": "classic, masculine, clean-cut, welcoming",
+    "colorDirection": "deep navy, warm wood tones, cream, burgundy accents",
+    "inspiration": "Classic American barbershop with modern polish. Clean lines, strong typography.",
+    "avoidance": "No hipster/trendy aesthetic. No neon. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Dark background, bold condensed display type, warm accent stripe",
+    "uniqueElement": "Animated barber pole stripe accent or rotating service showcase"
+  }
+}

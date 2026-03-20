@@ -1,0 +1,97 @@
+.services {
+  background: var(--bg-light);
+}
+
+.services-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.services-sub {
+  text-align: center;
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.services-category {
+  margin-bottom: 2.5rem;
+}
+
+.category-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  transition: border-left-color 0.2s, transform 0.2s;
+}
+
+.service-card:hover {
+  border-left-color: var(--gold);
+  transform: translateX(4px);
+}
+
+.service-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.service-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.service-dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--border);
+  min-width: 20px;
+  margin-bottom: 4px;
+}
+
+.service-price {
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.service-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
