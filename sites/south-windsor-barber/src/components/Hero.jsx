@@ -3,7 +3,14 @@ import './Hero.css'
 export default function Hero({ name, tagline, ctaText, ctaHref }) {
   return (
     <section className="hero">
-      <div className="hero-bg-pattern"></div>
+      <div className="hero-bg-photo">
+        <img
+          src="/images/shop-interior.jpg"
+          alt="South Windsor Barber Shop interior"
+          className="hero-bg-img"
+        />
+      </div>
+      <div className="hero-bg-overlay"></div>
       <div className="hero-inner">
         <div className="hero-badge">EST. 1927</div>
         <h1 className="hero-name">{name}</h1>
