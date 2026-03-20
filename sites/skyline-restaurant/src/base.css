@@ -1,0 +1,141 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+/* Section utility */
+.section {
+  padding: var(--section-padding);
+}
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Section label - elegant uppercase pre-heading */
+.section-label {
+  display: block;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+/* Gold decorative divider */
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--accent);
+  margin: 1.5rem auto;
+  position: relative;
+}
+.gold-divider::after {
+  content: '\2666';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 0.6rem;
+  padding: 0 0.5rem;
+}
+
+/* Banquets section */
+.banquets {
+  background: var(--bg-light);
+}
+.banquets-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.banquets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.banquet-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  opacity: 0;
+  animation: banquetReveal 0.6s ease forwards;
+}
+.banquet-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.banquet-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+.banquet-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@keyframes banquetReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3.5rem 1rem;
+  }
+}

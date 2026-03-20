@@ -1,0 +1,26 @@
+:root {
+  /* Colors — Skyline Restaurant: deep burgundy, gold, espresso */
+  --bg: #1a0e0e;
+  --bg-light: #2a1818;
+  --text: #faf5ec;
+  --text-muted: #c4b59a;
+  --accent: #c9a84c;
+  --accent-hover: #dfbf64;
+  --surface: #2e1a1a;
+  --border: #4a2c2c;
+  --burgundy: #6b1a2a;
+  --burgundy-deep: #4a0e1a;
+  --espresso: #3d2b1f;
+  --ivory: #faf5ec;
+  --gold-dim: rgba(201, 168, 76, 0.15);
+
+  /* Typography */
+  --font-display: 'Cinzel', serif;
+  --font-body: 'Libre Baskerville', serif;
+
+  /* Layout */
+  --nav-height: 80px;
+  --section-padding: 6rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 4px;
+}
