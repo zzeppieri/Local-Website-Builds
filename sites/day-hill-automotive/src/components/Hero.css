@@ -203,6 +203,7 @@
   min-height: 320px;
   white-space: pre;
   overflow: hidden;
+  text-shadow: 0 0 8px rgba(63, 185, 80, 0.3);
 }
 
 /* Animations */
