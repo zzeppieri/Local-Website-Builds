@@ -1,0 +1,23 @@
+:root {
+  /* Colors — Village Pizza: light, minimal, modern */
+  --bg: #FAFAF8;
+  --bg-light: #F2F1ED;
+  --text: #2C2C2C;
+  --text-muted: #6B6B6B;
+  --accent: #7D9B76;
+  --accent-hover: #6A8A63;
+  --accent-warm: #C4755B;
+  --accent-warm-hover: #B3644A;
+  --surface: #FFFFFF;
+  --border: #E5E3DF;
+
+  /* Typography — modern sans-serif (NOT serif like Family Pizzeria) */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 12px;
+}
