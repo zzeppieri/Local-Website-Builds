@@ -1,0 +1,122 @@
+.services {
+  background: var(--bg-light);
+}
+
+.services-heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--text);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+}
+
+/* Category tabs — neon style */
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.category-tab {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.6rem 1.4rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.category-tab:hover {
+  color: var(--accent);
+  border-color: rgba(255, 224, 27, 0.3);
+}
+
+.category-tab.active {
+  color: #141414;
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(255, 224, 27, 0.3);
+}
+
+/* Items grid */
+.services-panel {
+  animation: slideUp 0.4s ease-out;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+  animation: slideUp 0.4s ease-out both;
+}
+
+.service-card:hover {
+  border-left-color: var(--accent-red);
+  box-shadow: 0 0 12px rgba(255, 45, 45, 0.1);
+  transform: translateY(-2px);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+  gap: 1rem;
+}
+
+.service-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.service-price {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--accent);
+  white-space: nowrap;
+  font-size: 1.05rem;
+}
+
+.service-desc {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .category-tabs {
+    gap: 0.35rem;
+  }
+  .category-tab {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.9rem;
+  }
+}
