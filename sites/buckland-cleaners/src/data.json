@@ -1,0 +1,75 @@
+{
+  "slug": "buckland-cleaners",
+  "name": "Buckland Cleaners & Tailors",
+  "tagline": "Professional dry cleaning and expert tailoring — serving South Windsor since day one",
+  "type": "dry-cleaning",
+  "address": {
+    "street": "465 Buckland Road",
+    "city": "South Windsor",
+    "state": "CT",
+    "zip": "06074"
+  },
+  "phone": "(860) 644-2671",
+  "email": null,
+  "website": "bucklandcleanerstailors.com",
+  "hours": [
+    { "days": "Monday-Friday", "open": "7:00 AM", "close": "6:00 PM" },
+    { "days": "Saturday", "open": "8:30 AM", "close": "3:30 PM" },
+    { "days": "Sunday", "open": null, "close": null, "note": "Closed" }
+  ],
+  "tailoringHours": [
+    { "days": "Monday-Friday", "open": "9:30 AM", "close": "3:00 PM" },
+    { "days": "Saturday", "open": "9:30 AM", "close": "1:00 PM" },
+    { "note": "Call to make arrangements outside listed hours" }
+  ],
+  "services": [
+    {
+      "category": "Dry Cleaning",
+      "items": [
+        { "name": "Professional Dry Cleaning", "description": "Expert garment care using professional-grade cleaning methods for suits, dresses, coats, and delicates", "price": "Contact for pricing" },
+        { "name": "Special Cleaning", "description": "Specialty cleaning for unique fabrics and garments requiring extra care", "price": "Contact for pricing" },
+        { "name": "Wedding Dress Cleaning", "description": "Delicate cleaning and preservation for bridal gowns", "price": "Contact for pricing" }
+      ]
+    },
+    {
+      "category": "Laundry Services",
+      "items": [
+        { "name": "Business & Dress Shirt Laundering", "description": "Professionally laundered and pressed dress shirts for a crisp, polished look", "price": "Contact for pricing" },
+        { "name": "Wash, Dry & Fold", "description": "Full-service laundry — we wash, dry, and neatly fold your clothing", "price": "Contact for pricing" },
+        { "name": "Household & Linen Cleaning", "description": "Cleaning for comforters, blankets, curtains, tablecloths, and other household items", "price": "Contact for pricing" }
+      ]
+    },
+    {
+      "category": "Tailoring & Alterations",
+      "items": [
+        { "name": "Custom Garment Alterations", "description": "Expert on-site tailoring for a perfect fit — hems, sleeves, waistlines, and more", "price": "Contact for pricing" },
+        { "name": "Garment Repairs", "description": "Professional repairs including patching, re-stitching, zipper replacement, and button work", "price": "Contact for pricing" }
+      ]
+    },
+    {
+      "category": "Specialty Services",
+      "items": [
+        { "name": "Rug Cleaning", "description": "Professional cleaning for area rugs and specialty rugs", "price": "Contact for pricing" },
+        { "name": "Delivery Service", "description": "Convenient pickup and delivery for your cleaning and tailoring needs", "price": "Contact for pricing" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": null,
+    "instagram": null,
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Buckland+Cleaners+Tailors+465+Buckland+Rd+South+Windsor+CT",
+  "about": "Buckland Cleaners & Tailors is a trusted neighborhood dry cleaner and tailoring shop located at 465 Buckland Road in South Windsor, Connecticut. They offer a comprehensive range of garment care services including professional dry cleaning, shirt laundering, wash-dry-fold, household linen cleaning, wedding dress cleaning, rug cleaning, and expert on-site tailoring and alterations. With dedicated tailoring hours and convenient delivery service, they make it easy to keep your wardrobe looking its best.",
+  "features": ["Professional Dry Cleaning", "On-Site Expert Tailoring", "Shirt Laundering", "Wash Dry & Fold", "Wedding Dress Cleaning", "Rug Cleaning", "Delivery Service", "Walk-In Tailoring Available"],
+  "designBrief": {
+    "industry": "Dry Cleaning & Tailoring",
+    "mood": "clean, professional, trustworthy, modern",
+    "colorDirection": "crisp blues, white, slate grey, subtle teal accents",
+    "inspiration": "Premium laundry service. Crisp, clean aesthetic. Trust signals.",
+    "avoidance": "No clip art hangers or shirts. No dated stock photos. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Light, airy background with clean typography and a clear CTA",
+    "uniqueElement": "Animated garment care icon set or fabric texture background"
+  }
+}

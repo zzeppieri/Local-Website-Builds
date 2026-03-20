@@ -1,0 +1,25 @@
+:root {
+  /* Colors — Buckland Cleaners: crisp blues, white, slate grey, subtle teal */
+  --bg: #f8fafb;
+  --bg-light: #ffffff;
+  --text: #1e2a3a;
+  --text-muted: #5a6b7d;
+  --accent: #1a6fa5;
+  --accent-hover: #14577f;
+  --surface: #ffffff;
+  --border: #d8e2eb;
+  --teal: #2a9d8f;
+  --teal-light: rgba(42, 157, 143, 0.08);
+  --slate: #3d4f5f;
+  --blue-light: #e8f1f8;
+
+  /* Typography — Raleway for headings (clean, modern), Source Sans 3 for body */
+  --font-display: 'Raleway', sans-serif;
+  --font-body: 'Source Sans 3', 'system-ui', sans-serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 8px;
+}

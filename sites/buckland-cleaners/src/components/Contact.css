@@ -1,0 +1,76 @@
+.contact {
+  background: var(--bg-light);
+}
+.contact-heading {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+.contact-block {
+  margin-bottom: 1.5rem;
+}
+.contact-block h3 {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+.contact-block p,
+.contact-block a {
+  color: var(--text);
+  font-size: 1rem;
+}
+.contact-block a {
+  color: var(--accent);
+  transition: color 0.2s;
+}
+.contact-block a:hover {
+  color: var(--accent-hover);
+}
+.hours-list {
+  list-style: none;
+}
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.hours-days {
+  color: var(--text);
+  font-weight: 500;
+}
+.hours-time {
+  color: var(--text-muted);
+}
+.hours-note {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
