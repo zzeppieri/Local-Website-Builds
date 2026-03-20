@@ -89,6 +89,40 @@ button {
   text-align: center;
   margin-bottom: 3rem;
 }
+/* Banquet event photos */
+.banquet-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.banquet-photo-wrapper {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  aspect-ratio: 16 / 10;
+  opacity: 0;
+  animation: banquetReveal 0.6s ease forwards;
+}
+
+.banquet-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.banquet-photo-wrapper:hover .banquet-photo {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .banquet-photos {
+    grid-template-columns: 1fr;
+  }
+}
+
 .banquets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

@@ -1,8 +1,10 @@
 import './Hero.css'
 
+const HERO_BG = 'https://skylinerestaurantct.com/wp-content/uploads/2020/07/Skyline_Restaurant_Sign.jpg'
+
 export default function Hero({ name, tagline, ctaText, ctaHref }) {
   return (
-    <section className="hero">
+    <section className="hero" style={{ backgroundImage: `url(${HERO_BG})` }}>
       <div className="hero-overlay"></div>
       <div className="hero-inner">
         <p className="hero-established">Est. 1939</p>

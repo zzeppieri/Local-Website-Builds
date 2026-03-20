@@ -5,8 +5,13 @@ export default function Navbar({ name, links }) {
     <nav className="navbar">
       <div className="navbar-inner">
         <a href="#" className="navbar-logo">
-          <span className="logo-main">Skyline</span>
-          <span className="logo-sub">Restaurant & Banquet</span>
+          <img
+            src="https://skylinerestaurantct.com/wp-content/uploads/2020/07/Skyline_Restaurant_Logo_400px-1.png"
+            alt="Skyline Restaurant & Banquet logo"
+            className="navbar-logo-img"
+            width="160"
+            height="auto"
+          />
         </a>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <label htmlFor="nav-toggle" className="nav-hamburger" aria-label="Toggle menu">
