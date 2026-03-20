@@ -7,23 +7,31 @@
   text-align: center;
   padding: 0 1.5rem;
   padding-top: var(--nav-height);
-  background: linear-gradient(170deg, var(--blue-light) 0%, var(--bg) 50%, var(--bg-light) 100%);
+  background: var(--text);
   overflow: hidden;
 }
 
-/* Subtle diagonal fabric texture lines */
-.hero::before {
-  content: '';
+/* Real storefront photo background */
+.hero-bg-img {
   position: absolute;
   inset: 0;
-  background: repeating-linear-gradient(
-    135deg,
-    transparent,
-    transparent 30px,
-    rgba(26, 111, 165, 0.02) 30px,
-    rgba(26, 111, 165, 0.02) 31px
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* Blue-tinted overlay to maintain brand palette & text readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    170deg,
+    rgba(26, 111, 165, 0.78) 0%,
+    rgba(30, 42, 58, 0.72) 100%
   );
-  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-inner {
@@ -35,18 +43,20 @@
 .hero-name {
   font-family: var(--font-display);
   font-size: clamp(2.5rem, 7vw, 4.5rem);
-  color: var(--text);
+  color: #ffffff;
   line-height: 1.1;
   margin-bottom: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 .hero-tagline {
   font-size: clamp(1.05rem, 2.2vw, 1.35rem);
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.5rem;
   line-height: 1.5;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
 }
 
 .hero-cta {
@@ -79,8 +89,8 @@
 
 .hero-icon {
   position: absolute;
-  color: var(--accent);
-  opacity: 0.08;
+  color: #ffffff;
+  opacity: 0.12;
   animation: float 8s ease-in-out infinite;
 }
 

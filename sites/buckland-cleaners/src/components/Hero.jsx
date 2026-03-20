@@ -1,8 +1,20 @@
 import './Hero.css'
 
+const BANNER_SRC =
+  'https://lh3.googleusercontent.com/sitesv/APaQ0SQM3cQsP3Q_VJSg0QD0zSTtQjw0-Q5UOSgFjOQLPmBzksl6BaNwjmNIua4IRDr796kmpnM5bi1HGab3RK4bqd3gawlU-0fgKrYz_Mq3i1MF9peWE6dl731-JXxIsBfEcUXwu6hKXvOVvjcf5iKaBkviRPdrINK-jRJlKyBJyFOtEHeO6bjrEQ9XxTQNt-wVcBHwwKVJJsi3PVI=w1280'
+
 export default function Hero({ name, tagline, ctaText, ctaHref }) {
   return (
     <section className="hero">
+      <img
+        src={BANNER_SRC}
+        alt="Buckland Cleaners & Tailors storefront"
+        className="hero-bg-img"
+        loading="eager"
+        fetchPriority="high"
+      />
+      <div className="hero-overlay" aria-hidden="true" />
+
       {/* Floating garment care icons */}
       <div className="hero-icons" aria-hidden="true">
         <span className="hero-icon icon-1" title="Iron">
