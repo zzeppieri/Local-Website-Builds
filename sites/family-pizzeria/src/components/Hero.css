@@ -1,0 +1,197 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  padding-top: var(--nav-height);
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brick texture overlay */
+.hero-bg-texture {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 48px,
+      rgba(74, 56, 40, 0.08) 48px,
+      rgba(74, 56, 40, 0.08) 50px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 24px,
+      rgba(74, 56, 40, 0.06) 24px,
+      rgba(74, 56, 40, 0.06) 26px
+    );
+  pointer-events: none;
+}
+
+/* Warm radial glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(192, 57, 43, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-inner {
+  max-width: 850px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-est {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--accent-warm);
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-weight: 900;
+  color: var(--cream);
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 30px rgba(192, 57, 43, 0.2);
+}
+
+.hero-rule {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+  margin: 0 auto 1.5rem;
+  border-radius: 2px;
+}
+
+.hero-tagline {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Animated ingredient spotlight */
+.hero-ingredients {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.ingredient-spot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  opacity: 0;
+  animation: ingredientFadeIn 0.8s ease forwards;
+}
+
+.ingredient-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-warm);
+  margin-bottom: 0.25rem;
+  animation: dotPulse 2.5s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(212, 136, 15, 0.5);
+}
+
+.ingredient-spot:nth-child(2) .ingredient-dot { animation-delay: 0.5s; }
+.ingredient-spot:nth-child(3) .ingredient-dot { animation-delay: 1s; }
+.ingredient-spot:nth-child(4) .ingredient-dot { animation-delay: 1.5s; }
+.ingredient-spot:nth-child(5) .ingredient-dot { animation-delay: 2s; }
+
+.ingredient-name {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+}
+
+.ingredient-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@keyframes ingredientFadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 16px rgba(212, 136, 15, 0.8); }
+}
+
+/* CTA Buttons */
+.hero-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-cta-primary {
+  background: var(--accent);
+  color: var(--cream);
+  box-shadow: 0 4px 20px rgba(192, 57, 43, 0.3);
+}
+.hero-cta-primary:hover {
+  background: var(--accent-hover);
+  color: var(--cream);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(192, 57, 43, 0.45);
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  color: var(--accent-warm);
+  border: 2px solid var(--accent-warm);
+}
+.hero-cta-secondary:hover {
+  background: var(--accent-warm);
+  color: var(--bg);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-ingredients {
+    gap: 1rem;
+  }
+  .ingredient-spot {
+    min-width: 80px;
+  }
+}

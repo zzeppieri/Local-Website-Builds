@@ -1,0 +1,27 @@
+:root {
+  /* Colors — warm rustic Italian pizzeria palette */
+  --bg: #1c1410;
+  --bg-light: #2a1f18;
+  --text: #f5ebe0;
+  --text-muted: #bfa98f;
+  --accent: #c0392b;
+  --accent-hover: #e74c3c;
+  --accent-warm: #d4880f;
+  --accent-warm-hover: #e9a825;
+  --surface: #2e2218;
+  --surface-warm: #362a1e;
+  --border: #4a3828;
+  --border-light: #5c4a38;
+  --cream: #f5ebe0;
+  --charcoal: #2c2c2c;
+
+  /* Typography — rustic Italian feel */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Lora', 'Georgia', serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 6px;
+}
