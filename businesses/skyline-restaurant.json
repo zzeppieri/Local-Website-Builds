@@ -1,0 +1,107 @@
+{
+  "slug": "skyline-restaurant",
+  "name": "Skyline Restaurant & Banquet",
+  "tagline": "Fine Italian Dining & Steakhouse Since 1939",
+  "type": "restaurant",
+  "address": {
+    "street": "106 Ella Grasso Turnpike",
+    "city": "Windsor Locks",
+    "state": "CT",
+    "zip": "06096"
+  },
+  "phone": "(860) 623-9296",
+  "fax": "(860) 623-0329",
+  "email": null,
+  "website": "https://skylinerestaurantct.com",
+  "hours": [
+    { "days": "Mon-Thu", "open": "11:00 AM", "close": "1:00 AM" },
+    { "days": "Fri-Sat", "open": "11:00 AM", "close": "2:00 AM" },
+    { "days": "Sun", "open": "12:00 PM", "close": "9:00 PM" }
+  ],
+  "happyHour": {
+    "days": "Mon-Fri",
+    "open": "3:30 PM",
+    "close": "6:00 PM"
+  },
+  "services": [
+    {
+      "category": "Steaks & Prime Rib",
+      "items": [
+        { "name": "Hand-Cut Steaks", "description": "Premium hand-cut steaks prepared to order", "price": null },
+        { "name": "Prime Rib", "description": "Slow-roasted prime rib, a house specialty", "price": null }
+      ]
+    },
+    {
+      "category": "Italian Specialties",
+      "items": [
+        { "name": "Classic Italian Entrees", "description": "Traditional Italian dishes made with freshly prepared sauces from scratch", "price": null },
+        { "name": "Fresh Baked Breads", "description": "House-baked breads made fresh daily", "price": null }
+      ]
+    },
+    {
+      "category": "Seafood",
+      "items": [
+        { "name": "Fresh Clams & Oysters", "description": "Fresh raw bar selections including clams and oysters", "price": null },
+        { "name": "Seafood Entrees", "description": "Fresh seafood dishes prepared daily", "price": null }
+      ]
+    },
+    {
+      "category": "Appetizers",
+      "items": [
+        { "name": "Appetizer Selection", "description": "Over 20 appetizers to choose from", "price": null }
+      ]
+    },
+    {
+      "category": "Hand-Crafted Burgers",
+      "items": [
+        { "name": "Hand-Crafted Burgers", "description": "Premium burgers made fresh in-house", "price": null }
+      ]
+    },
+    {
+      "category": "Daily Specials",
+      "items": [
+        { "name": "Lunch Specials", "description": "Rotating daily lunch specials", "price": null },
+        { "name": "Dinner Specials", "description": "Rotating daily dinner specials", "price": null }
+      ]
+    },
+    {
+      "category": "Banquets & Events",
+      "items": [
+        { "name": "Banquet Facility", "description": "Private banquet room accommodating up to 225 guests with private bar", "price": null },
+        { "name": "Wedding Packages", "description": "Customizable wedding reception packages with full-service catering", "price": null },
+        { "name": "Private Dining", "description": "Main dining room available for private parties, seats up to 40", "price": null }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/skyline.rest",
+    "instagram": null,
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Skyline Restaurant & Banquet, 106 Ella Grasso Turnpike, Windsor Locks, CT 06096",
+  "about": "Established in 1939, Skyline Restaurant & Banquet has been a cornerstone of fine Italian dining and steakhouse cuisine in the greater Hartford area for over 80 years. Located near Bradley International Airport in Windsor Locks, the restaurant combines upscale dining with warm, welcoming hospitality. Their chefs prepare freshly baked breads, soups, and sauces from scratch daily, ensuring every dish reflects their commitment to quality and tradition.",
+  "features": [
+    "Established 1939",
+    "Near Bradley International Airport",
+    "Banquet facility for up to 225 guests",
+    "Private dining room seats up to 40",
+    "Outdoor patio dining",
+    "12 TVs for sports viewing",
+    "Live entertainment, DJ & karaoke",
+    "Comedy shows",
+    "Pool table & Golden Tee golf",
+    "Late-night dining",
+    "Happy Hour Mon-Fri 3:30-6:00 PM",
+    "Wedding & event packages"
+  ],
+  "designBrief": {
+    "industry": "Italian Restaurant & Steakhouse",
+    "mood": "upscale, classic, warm, celebratory",
+    "colorDirection": "deep burgundy, gold, rich espresso brown, warm ivory",
+    "inspiration": "Classic upscale Italian steakhouse. Rich colors, elegant type, warm ambiance.",
+    "avoidance": "No casual pizza vibes. No rustic farmhouse. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Dark rich background, elegant serif display, gold accent details",
+    "uniqueElement": "Animated banquet/event showcase or elegant menu category reveal"
+  }
+}
