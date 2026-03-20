@@ -1,0 +1,21 @@
+:root {
+  /* Colors — replaced per site */
+  --bg: #111111;
+  --bg-light: #1a1a1a;
+  --text: #f0f0f0;
+  --text-muted: #999999;
+  --accent: #ff6b35;
+  --accent-hover: #ff8555;
+  --surface: #222222;
+  --border: #333333;
+
+  /* Typography — replaced per site */
+  --font-display: 'Georgia', serif;
+  --font-body: 'system-ui', sans-serif;
+
+  /* Layout */
+  --nav-height: 72px;
+  --section-padding: 5rem 1.5rem;
+  --max-width: 1200px;
+  --radius: 8px;
+}
