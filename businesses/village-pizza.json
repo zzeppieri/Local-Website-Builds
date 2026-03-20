@@ -1,0 +1,108 @@
+{
+  "slug": "village-pizza",
+  "name": "Village Pizza",
+  "tagline": "Order your favorite pizza, pasta, salad, and more — all with the click of a button",
+  "type": "restaurant",
+  "address": {
+    "street": "23 Ella Grasso Turnpike",
+    "city": "Windsor Locks",
+    "state": "CT",
+    "zip": "06096"
+  },
+  "phone": "(860) 627-7771",
+  "email": null,
+  "website": "villagepizzaofwindsorlocks.com",
+  "hours": [
+    { "days": "Monday-Saturday", "open": "3:00 PM", "close": "2:00 AM" },
+    { "days": "Sunday", "open": "3:00 PM", "close": "1:00 AM" }
+  ],
+  "deliveryHours": [
+    { "days": "Monday-Saturday", "open": "3:00 PM", "close": "1:45 AM" },
+    { "days": "Sunday", "open": "3:00 PM", "close": "12:45 AM" }
+  ],
+  "services": [
+    {
+      "category": "Pizza",
+      "items": [
+        { "name": "Mozzarella Cheese Pizza", "description": "Classic hand-tossed cheese pizza", "price": "$12.50" },
+        { "name": "Meat Lovers Pizza", "description": "Loaded with assorted premium meats", "price": "$16.50" },
+        { "name": "Village Pizza Special", "description": "House special with premium toppings", "price": "$16.50" },
+        { "name": "Margherita Pizza", "description": "Fresh mozzarella, tomato, and basil", "price": "$16.50" },
+        { "name": "Buffalo Chicken Pizza", "description": "Spicy buffalo chicken with blue cheese", "price": "$15.50" },
+        { "name": "Hawaiian Pizza", "description": "Ham and pineapple", "price": "$15.50" }
+      ]
+    },
+    {
+      "category": "Appetizers",
+      "items": [
+        { "name": "Mozzarella Sticks", "description": "Breaded and fried mozzarella", "price": "$9.99" },
+        { "name": "French Fries", "description": "Crispy golden fries", "price": "$6.50" },
+        { "name": "Wings", "description": "Chicken wings with your choice of sauce", "price": "$9.75" }
+      ]
+    },
+    {
+      "category": "Salads",
+      "items": [
+        { "name": "Garden Salad", "description": "Fresh mixed greens with vegetables", "price": "$8.50" },
+        { "name": "Caesar Salad", "description": "Romaine, croutons, parmesan, Caesar dressing", "price": "$9.50" },
+        { "name": "Greek Salad", "description": "Mixed greens, feta, olives, peppers, and Greek dressing", "price": "$11.25" }
+      ]
+    },
+    {
+      "category": "Italian Dinners",
+      "items": [
+        { "name": "Pasta with Meatballs", "description": "Spaghetti or ziti with homemade meatballs", "price": "$14.50" },
+        { "name": "Chicken Parmigiana", "description": "Breaded chicken cutlet with marinara and melted mozzarella over pasta", "price": "$17.99" },
+        { "name": "Lasagna", "description": "Layered pasta with meat sauce, ricotta, and mozzarella", "price": "$17.99" }
+      ]
+    },
+    {
+      "category": "Sandwiches & Grinders",
+      "items": [
+        { "name": "Steak Grinder", "description": "Shaved steak with toppings", "price": "$10.25" },
+        { "name": "Roast Beef Grinder", "description": "Sliced roast beef", "price": "$10.25" },
+        { "name": "Club Sandwich", "description": "Triple-decker club with turkey, bacon, lettuce, and tomato", "price": "$12.99" }
+      ]
+    },
+    {
+      "category": "Specials",
+      "items": [
+        { "name": "Beef Gyro", "description": "Seasoned beef in warm pita with tzatziki", "price": "$10.99" },
+        { "name": "Chicken Souvlaki", "description": "Grilled chicken in warm pita with tzatziki", "price": "$10.99" }
+      ]
+    },
+    {
+      "category": "Desserts",
+      "items": [
+        { "name": "Cheesecake", "description": "Rich and creamy cheesecake", "price": "$8.99" },
+        { "name": "Tiramisu", "description": "Classic Italian tiramisu", "price": "$9.75" },
+        { "name": "Fried Dough", "description": "Golden fried dough with powdered sugar", "price": "$8.99" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": null,
+    "instagram": null,
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Village+Pizza+23+Ella+Grasso+Tpke+Windsor+Locks+CT",
+  "about": "Village Pizza is a beloved neighborhood pizza shop located at 23 Ella Grasso Turnpike in Windsor Locks, Connecticut. Known for their hand-tossed pizzas, hearty Italian dinners, and wide selection of grinders and specialties, they offer convenient online ordering with both delivery and pickup options. Open late-night hours, Village Pizza is the go-to spot for a satisfying meal any time of day.",
+  "features": ["Delivery (30-45 min estimated)", "Pickup (15-30 min estimated)", "Online Ordering", "Scheduled Orders", "Contactless Delivery", "Curbside Pickup", "Late-Night Hours", "Credit Card Only (No Cash)"],
+  "orderingDetails": {
+    "serviceFee": "$1.99",
+    "taxRate": "7.35%",
+    "loyaltyDiscount": "5%",
+    "tippingEnabled": true,
+    "specialInstructions": true
+  },
+  "designBrief": {
+    "industry": "Pizza Restaurant",
+    "mood": "modern, minimalist, casual, light",
+    "colorDirection": "light palette, clean whites, sage green, soft terracotta accents",
+    "inspiration": "Modern minimalist counter-service pizza. Clean lines, not sit-down Italian.",
+    "avoidance": "No dark/heavy Italian themes (that's Family Pizzeria). No rustic textures. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Bright, light background, minimal text, modern sans-serif display",
+    "uniqueElement": "Animated menu category tabs or ingredient highlight carousel"
+  }
+}

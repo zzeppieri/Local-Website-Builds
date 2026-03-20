@@ -1,0 +1,155 @@
+{
+  "slug": "scruples-salon",
+  "name": "Scruples Salon & Day Spa",
+  "tagline": "A friendly and harmonious day spa and salon — enhance your appearance, promote good health",
+  "type": "salon",
+  "address": {
+    "street": "325 Hazard Avenue",
+    "city": "Enfield",
+    "state": "CT",
+    "zip": "06082"
+  },
+  "phone": "(860) 763-1800",
+  "email": null,
+  "website": "scruplesdayspa.com",
+  "founded": "2003",
+  "proprietor": "Crystal Theocles",
+  "hours": [
+    { "days": "Monday-Thursday", "open": "11:00 AM", "close": "7:00 PM" },
+    { "days": "Friday", "open": "9:30 AM", "close": "4:00 PM" },
+    { "days": "Saturday", "open": "8:00 AM", "close": "3:00 PM" },
+    { "days": "Sunday", "open": "10:00 AM", "close": "1:00 PM", "note": "Soothing Sundays — massages by appointment only (book by Saturday prior)" }
+  ],
+  "services": [
+    {
+      "category": "Massage",
+      "items": [
+        { "name": "Swedish Massage", "description": "Classic relaxation massage using long, flowing strokes", "price": "$65" },
+        { "name": "Prenatal Massage", "description": "Gentle therapeutic massage for expectant mothers", "price": "$75" },
+        { "name": "Soothing Touch Therapeutic Massage", "description": "Calming therapeutic massage focused on stress relief", "price": "$78" },
+        { "name": "Neuromuscular Deep Tissue Massage", "description": "Targeted deep tissue work for chronic tension and pain relief", "price": "$80" },
+        { "name": "Fitness Massage", "description": "Sports-oriented massage to aid recovery and flexibility", "price": "$83" },
+        { "name": "Hot Stone Massage", "description": "Heated stone therapy for deep muscle relaxation", "price": "$85" },
+        { "name": "Reflexology", "description": "Pressure-point therapy focused on the feet (15 min)", "price": "$35" }
+      ]
+    },
+    {
+      "category": "Facials",
+      "items": [
+        { "name": "Hydrating Glo Mini Facial", "description": "Quick hydrating facial for a refreshed glow", "price": "$58" },
+        { "name": "The Mini Peel", "description": "Light chemical peel for skin renewal", "price": "$55" },
+        { "name": "Lactic Action Exfoliating Treatment", "description": "Gentle exfoliation with lactic acid", "price": "$60" },
+        { "name": "Alpha Hydroxy Acid Active Exfoliator", "description": "Active exfoliation for brighter, smoother skin", "price": "$65" },
+        { "name": "Lactic Acid Skin Recovery Treatment", "description": "Restorative treatment for damaged or stressed skin", "price": "$70" },
+        { "name": "Classic Glo Facial", "description": "Full facial treatment for healthy, glowing skin", "price": "$75" },
+        { "name": "Glo Back Facial", "description": "Cleansing and exfoliating treatment for the back", "price": "$75" },
+        { "name": "Medical Acne Management Facial", "description": "Clinical-grade facial targeting acne and breakouts", "price": "$75" },
+        { "name": "Microdermabrasion Skin Treatment", "description": "Professional microdermabrasion for skin resurfacing", "price": "$78" },
+        { "name": "Clear Skin Glo Facial", "description": "Deep-cleansing facial for clear, balanced skin", "price": "$80" },
+        { "name": "Vitamin C Glo Facial", "description": "Brightening facial with vitamin C infusion", "price": "$80" },
+        { "name": "Gentlemen's Organic Retreat Facial", "description": "Men's facial using organic products", "price": "$75" },
+        { "name": "Men's Back Treatment", "description": "Cleansing back treatment designed for men", "price": "$75" },
+        { "name": "Black Head Removal Treatment", "description": "Targeted extraction treatment", "price": "$45" },
+        { "name": "Collagen and Ginkgo Eye Treatment", "description": "Anti-aging eye treatment with collagen and ginkgo", "price": "$45" },
+        { "name": "Retinol Lip Treatment", "description": "Smoothing retinol treatment for lips", "price": "$30" },
+        { "name": "De-Stress Eye Puffiness Treatment", "description": "Soothing treatment for puffy, tired eyes", "price": "$25" },
+        { "name": "Collagen Eye Wrinkle Treatment", "description": "Anti-wrinkle collagen eye treatment", "price": "$25" },
+        { "name": "Propolis Ampoule Treatment", "description": "Calming treatment for sensitive skin", "price": "$20" }
+      ]
+    },
+    {
+      "category": "Body Treatments",
+      "items": [
+        { "name": "Spa Salt Glow Exfoliation", "description": "Full-body salt scrub for silky smooth skin", "price": "$72" },
+        { "name": "Moor Mud Treatment", "description": "Detoxifying mud wrap to draw out impurities", "price": "$78" },
+        { "name": "Seaweed and French Green Clay Body Experience", "description": "Luxurious body wrap with seaweed and clay", "price": "$78" }
+      ]
+    },
+    {
+      "category": "Nails",
+      "items": [
+        { "name": "Classic Manicure", "description": "Traditional nail shaping, cuticle care, and polish", "price": "$20" },
+        { "name": "French Manicure", "description": "Classic French tip manicure", "price": "$25" },
+        { "name": "Men's Manicure", "description": "Grooming manicure designed for men", "price": "$25" },
+        { "name": "Revitalizing Spa Manicure", "description": "Luxurious manicure with exfoliation and hydrating treatment", "price": "$30" },
+        { "name": "Classic Shellac", "description": "Long-lasting gel polish manicure", "price": "$35" },
+        { "name": "French Shellac", "description": "French tip shellac manicure", "price": "$40" },
+        { "name": "Classic Pedicure", "description": "Foot soak, nail care, and polish", "price": "$37" },
+        { "name": "French Pedicure", "description": "Classic French tip pedicure", "price": "$45" },
+        { "name": "Papaya Revitalizing Spa Pedicure", "description": "Luxurious pedicure with papaya enzyme treatment", "price": "$52" },
+        { "name": "Finger Polish Change", "description": "Quick polish change for fingers", "price": "$12" },
+        { "name": "Toe Polish Change", "description": "Quick polish change for toes", "price": "$20" },
+        { "name": "Paraffin Hand Treatment", "description": "Warm paraffin wax treatment for hands", "price": "$10" },
+        { "name": "Paraffin Foot Treatment", "description": "Warm paraffin wax treatment for feet", "price": "$17" }
+      ]
+    },
+    {
+      "category": "Waxing",
+      "items": [
+        { "name": "Eyebrow Shaping", "description": "Precise eyebrow waxing and shaping", "price": "$12" },
+        { "name": "Guy Brow", "description": "Men's eyebrow grooming", "price": "$10" },
+        { "name": "Upper Lip", "description": "Upper lip wax", "price": "$10" },
+        { "name": "Chin", "description": "Chin wax", "price": "$10" },
+        { "name": "Nostrils", "description": "Nostril hair wax", "price": "$10" },
+        { "name": "Facial Sides", "description": "Side of face wax", "price": "$12" },
+        { "name": "Full Face", "description": "Complete facial waxing", "price": "$40" },
+        { "name": "Underarms", "description": "Underarm wax", "price": "$20" },
+        { "name": "Half Arm", "description": "Lower or upper arm wax", "price": "$30" },
+        { "name": "Full Arm", "description": "Complete arm wax", "price": "$35" },
+        { "name": "Half Leg", "description": "Lower or upper leg wax", "price": "$35" },
+        { "name": "Full Leg", "description": "Complete leg wax", "price": "$55" },
+        { "name": "Bikini", "description": "Standard bikini line wax", "price": "$30" },
+        { "name": "Extreme Bikini", "description": "Extended bikini wax", "price": "$40" },
+        { "name": "Brazilian", "description": "Full Brazilian wax", "price": "$60" },
+        { "name": "Woman's Back", "description": "Back wax for women", "price": "$20" },
+        { "name": "Woman's Stomach", "description": "Stomach wax for women", "price": "$15" },
+        { "name": "Men's Chest or Back", "description": "Chest or back wax for men", "price": "$45" },
+        { "name": "Toes", "description": "Toe hair wax", "price": "$5" }
+      ]
+    },
+    {
+      "category": "Hair Services",
+      "items": [
+        { "name": "Gentlemen's Haircut", "description": "Men's precision haircut", "price": "$22" },
+        { "name": "Senior Gentlemen's Haircut", "description": "Men's haircut for seniors", "price": "$18" },
+        { "name": "Shampoo, Cut & Style", "description": "Full-service women's cut with shampoo and styling", "price": "$32" },
+        { "name": "Senior Woman's Shampoo, Cut & Style", "description": "Women's cut and style for seniors", "price": "$28" },
+        { "name": "Senior Shampoo & Blowdry", "description": "Shampoo and blowout for seniors", "price": "$25" },
+        { "name": "Shampoo, Blowdry, Flat Iron or Curl", "description": "Full blowout with flat iron or curling", "price": "$45" },
+        { "name": "Gentlemen's Highlight/Color", "description": "Men's hair color or highlights", "price": "$45" }
+      ]
+    },
+    {
+      "category": "Makeup & Beauty",
+      "items": [
+        { "name": "Professional Makeup Application", "description": "Full face professional makeup for any occasion", "price": "$55" },
+        { "name": "Bridal Trial Makeup", "description": "Pre-wedding trial makeup session", "price": "$65" },
+        { "name": "Wedding Day Makeup", "description": "Full bridal makeup on your special day", "price": "$80" },
+        { "name": "Eyelash Tinting", "description": "Semi-permanent lash color enhancement", "price": "$25-$28" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/ScruplesdaySpa/",
+    "instagram": "https://www.instagram.com/scruples_salon_and_day_spa/",
+    "yelp": "https://www.yelp.com/biz/scruples-boutique-and-day-spa-enfield",
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Scruples+Salon+Day+Spa+325+Hazard+Ave+Enfield+CT",
+  "about": "Scruples Salon & Day Spa is a friendly and harmonious day spa and salon founded in 2003, located at 325 Hazard Avenue in Enfield, Connecticut. Under the care of proprietor Crystal Theocles, Scruples offers a comprehensive range of services designed to enhance your appearance and promote good health — from REIKI and medical-grade esthetic treatments to Swedish massage, hair styling, nails, waxing, facials, body treatments, and bridal packages. They proudly serve communities throughout Connecticut and Massachusetts, and accept gift certificates from Spafinder, Spa Week, and Spa Wish.",
+  "features": ["Full-Service Salon", "Day Spa", "REIKI", "Medical-Grade Esthetics", "Bridal Services", "Spa Packages", "Soothing Sundays (Massage by Appointment)", "Gentlemen's Services", "Senior Discounts", "Gift Certificates Available", "Spafinder / Spa Week / Spa Wish Accepted"],
+  "additionalLocations": ["Glastonbury, CT", "Manchester, CT", "Suffield, CT"],
+  "giftCertificates": {
+    "accepted": ["Spafinder", "Spa Week", "Spa Wish", "Direct Purchase"],
+    "note": "Gift cards must be presented in physical form. Spafinder/Spa Week/Spa Wish cards invalid for spa parties."
+  },
+  "designBrief": {
+    "industry": "Salon & Day Spa",
+    "mood": "luxurious, calm, feminine, modern",
+    "colorDirection": "deep plum, blush pink, gold accents, soft cream",
+    "inspiration": "High-end spa website. Clean whitespace, elegant serif headings, muted tones.",
+    "avoidance": "No neon colors. No clip art. No popup CTAs. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Light background, centered text, single accent color, soft gradient",
+    "uniqueElement": "Service category cards with hover reveal details"
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "slug": "family-pizzeria",
+  "name": "Family Pizzeria",
+  "tagline": "Family owned and operated since day one — serving Windsor, Hartford & Bloomfield",
+  "type": "restaurant",
+  "address": {
+    "street": "181 Broad Street",
+    "city": "Windsor",
+    "state": "CT",
+    "zip": "06095"
+  },
+  "phone": "(860) 688-5069",
+  "phoneOrders": "(860) 688-5240",
+  "email": null,
+  "website": "familypizzawindsorct.com",
+  "onlineOrdering": "familypizza.onlineordering.io",
+  "hours": [
+    { "days": "Monday", "open": null, "close": null, "note": "Closed" },
+    { "days": "Tuesday-Saturday", "open": "11:00 AM", "close": "10:00 PM" },
+    { "days": "Sunday", "open": "12:00 PM", "close": "9:00 PM" }
+  ],
+  "services": [
+    {
+      "category": "Cheese Pizza",
+      "items": [
+        { "name": "Small 10\" (6 pc)", "description": "Hand-tossed cheese pizza", "price": "$12.99" },
+        { "name": "Small 10\" Gluten Free (6 pc)", "description": "Gluten-free crust cheese pizza", "price": "$13.99" },
+        { "name": "Medium 14\" (8 pc)", "description": "Hand-tossed cheese pizza", "price": "$15.99" },
+        { "name": "Large 16\" (14 pc)", "description": "Hand-tossed cheese pizza", "price": "$17.99" },
+        { "name": "Party 18\"x30\" (32 pc)", "description": "Signature 32-slice party pizza", "price": "$28.99" }
+      ]
+    },
+    {
+      "category": "House Specialty Pizzas",
+      "note": "Small $15.99 | Medium $20.49 | Large $25.49 | Party $37.99",
+      "items": [
+        { "name": "Margherita", "description": "Classic margherita with fresh mozzarella and basil", "price": "from $15.99" },
+        { "name": "Vegetarian", "description": "Loaded with fresh vegetables", "price": "from $15.99" },
+        { "name": "Hawaiian", "description": "Ham and pineapple", "price": "from $15.99" },
+        { "name": "Meat Lover", "description": "Loaded with assorted meats", "price": "from $15.99" },
+        { "name": "Mediterranean", "description": "Mediterranean-style toppings", "price": "from $15.99" },
+        { "name": "Special", "description": "House special with premium toppings", "price": "from $15.99" },
+        { "name": "Neapolitan (White)", "description": "White pizza, Neapolitan-style", "price": "from $15.99" },
+        { "name": "Broccoli (White)", "description": "White pizza with broccoli", "price": "from $15.99" },
+        { "name": "Eggplant (White)", "description": "White pizza with eggplant", "price": "from $15.99" },
+        { "name": "Spinach (White)", "description": "White pizza with spinach", "price": "from $15.99" },
+        { "name": "Seafood (White)", "description": "White pizza with seafood", "price": "from $15.99" },
+        { "name": "Chicken (White)", "description": "White pizza with chicken", "price": "from $15.99" },
+        { "name": "Chicken Bacon Ranch (White)", "description": "White pizza with chicken, bacon, and ranch", "price": "from $15.99" },
+        { "name": "Chicken Broccoli (White)", "description": "White pizza with chicken and broccoli", "price": "from $15.99" },
+        { "name": "BBQ Chicken (White)", "description": "White pizza with BBQ chicken", "price": "from $15.99" },
+        { "name": "Buffalo Chicken (White)", "description": "White pizza with buffalo chicken", "price": "from $15.99" }
+      ]
+    },
+    {
+      "category": "Salads",
+      "note": "All served with bread & butter",
+      "items": [
+        { "name": "Tossed Salad", "description": "Fresh garden salad", "price": "$7.99" },
+        { "name": "Tossed Salad with Mozzarella or Feta", "description": "Garden salad with cheese", "price": "$8.99" },
+        { "name": "Greek Salad", "description": "Traditional Greek salad", "price": "$8.99" },
+        { "name": "Caesar Salad", "description": "Classic Caesar", "price": "$8.99" },
+        { "name": "Grilled or Crispy Chicken Salad", "description": "Mixed greens with chicken", "price": "$13.99" },
+        { "name": "Antipasto", "description": "Italian meats and cheeses over greens", "price": "$13.99" },
+        { "name": "Chef Salad", "description": "Classic chef salad", "price": "$13.99" },
+        { "name": "Buffalo Chicken Salad", "description": "Crispy buffalo chicken over greens", "price": "$13.99" },
+        { "name": "Spinach Salad", "description": "Fresh spinach salad", "price": "$13.99" },
+        { "name": "Cobb Salad", "description": "Classic Cobb", "price": "$13.99" }
+      ]
+    },
+    {
+      "category": "Appetizers",
+      "items": [
+        { "name": "Garlic Bread", "description": "Toasted garlic bread", "price": "$3.99" },
+        { "name": "Garlic Bread with Cheese", "description": "Topped with melted mozzarella", "price": "$4.99" },
+        { "name": "French Fries", "description": "Crispy fries", "price": "$4.99" },
+        { "name": "Loaded Fries", "description": "With cheese and bacon", "price": "$6.99" },
+        { "name": "Onion Rings", "description": "Battered onion rings", "price": "$6.99" },
+        { "name": "Fried Mozzarella", "description": "Breaded mozzarella sticks", "price": "$9.99" },
+        { "name": "Jalapeno Poppers (6)", "description": "Stuffed jalapeno peppers", "price": "$9.99" },
+        { "name": "Chicken Tenders (6)", "description": "Breaded chicken tenders", "price": "$10.99" },
+        { "name": "Chicken Tenders with Fries", "description": "Tenders served with fries", "price": "$12.99" },
+        { "name": "Spicy Buffalo Tenders (6)", "description": "Buffalo-style chicken tenders", "price": "$11.99" },
+        { "name": "Wings (5 pc)", "description": "Plain, BBQ, or Buffalo with celery & blue cheese", "price": "$8.99" },
+        { "name": "Wings (10 pc)", "description": "Plain, BBQ, or Buffalo with celery & blue cheese", "price": "$15.99" }
+      ]
+    },
+    {
+      "category": "Grinders",
+      "note": "Available on roll or wrap. 8\" or 12\" sizes.",
+      "items": [
+        { "name": "Meatball", "description": "Classic meatball grinder", "price": "$9.99 / $11.99" },
+        { "name": "Sausage", "description": "Hot or sweet sausage", "price": "$9.99 / $11.99" },
+        { "name": "Chicken Parmesan", "description": "Breaded chicken with marinara and cheese", "price": "$10.99 / $12.99" },
+        { "name": "Steak & Cheese", "description": "With peppers, onion, and mushroom", "price": "$10.99 / $12.99" },
+        { "name": "Buffalo Chicken", "description": "Spicy buffalo-style chicken", "price": "$10.99 / $12.99" },
+        { "name": "Italian Combo", "description": "Ham, Genoa salami, and capicola", "price": "$10.99 / $12.99" },
+        { "name": "Roast Beef", "description": "Sliced roast beef", "price": "$10.99 / $12.99" },
+        { "name": "Turkey", "description": "Sliced turkey", "price": "$9.99 / $11.99" },
+        { "name": "Tuna Fish", "description": "Tuna salad", "price": "$9.99 / $11.99" },
+        { "name": "BLT", "description": "Bacon, lettuce, and tomato", "price": "$10.99 / $12.99" }
+      ]
+    },
+    {
+      "category": "Wraps",
+      "note": "Regular $9.99 | Deluxe $12.99 (includes fries)",
+      "items": [
+        { "name": "Buffalo Chicken Wrap", "description": "With blue cheese dressing", "price": "$9.99" },
+        { "name": "Chicken Caesar Wrap", "description": "Grilled chicken with Caesar dressing", "price": "$9.99" },
+        { "name": "Chicken Bacon Ranch Wrap", "description": "Chicken, bacon, and ranch", "price": "$9.99" },
+        { "name": "Steak Wrap", "description": "Steak with toppings", "price": "$9.99" },
+        { "name": "BLT Wrap", "description": "Bacon, lettuce, and tomato", "price": "$9.99" }
+      ]
+    },
+    {
+      "category": "Quesadillas",
+      "items": [
+        { "name": "Cheese Quesadilla", "description": "Melted cheese in a crispy tortilla", "price": "$7.99" },
+        { "name": "Chicken Quesadilla", "description": "With grilled chicken", "price": "$11.99" },
+        { "name": "Steak Quesadilla", "description": "With steak, peppers, and onions", "price": "$11.99" },
+        { "name": "BBQ Chicken Quesadilla", "description": "With BBQ chicken and bacon", "price": "$11.99" },
+        { "name": "Buffalo Chicken Quesadilla", "description": "With buffalo chicken", "price": "$11.99" }
+      ]
+    },
+    {
+      "category": "Pasta",
+      "note": "Served with salad and bread & butter. Choice of ziti or spaghetti.",
+      "items": [
+        { "name": "Pasta with Tomato Sauce", "description": "Ziti or spaghetti with marinara", "price": "$11.99" },
+        { "name": "Pasta with Meatball or Sausage", "description": "With two meatballs or sausages", "price": "$16.99" },
+        { "name": "Chicken Parmesan", "description": "Breaded chicken over pasta with marinara", "price": "$18.99" },
+        { "name": "Eggplant Parmesan", "description": "Breaded eggplant over pasta with marinara", "price": "$18.99" },
+        { "name": "Cheese Ravioli", "description": "Cheese-filled ravioli", "price": "$13.00" },
+        { "name": "Meat Ravioli", "description": "Meat-filled ravioli", "price": "$15.00" },
+        { "name": "Stuffed Shells", "description": "Ricotta-stuffed pasta shells", "price": "$15.99" },
+        { "name": "Baked Ziti", "description": "Baked ziti with cheese and sauce", "price": "$15.99" }
+      ]
+    },
+    {
+      "category": "Calzones",
+      "items": [
+        { "name": "Cheese Calzone", "description": "Filled with ricotta and mozzarella, marinara on side", "price": "$12.99" }
+      ]
+    },
+    {
+      "category": "From the Grill",
+      "note": "Regular or Deluxe (includes fries & pickles)",
+      "items": [
+        { "name": "6 oz. Hamburger", "description": "Classic burger with lettuce, tomato, cheese", "price": "$8.99 / $11.99" },
+        { "name": "Bacon Hamburger", "description": "Burger with bacon", "price": "$9.99 / $12.99" },
+        { "name": "Grilled Chicken Sandwich", "description": "Grilled chicken breast", "price": "$8.99 / $11.99" },
+        { "name": "Crispy Chicken Sandwich", "description": "Breaded chicken breast", "price": "$8.99 / $11.99" },
+        { "name": "Cod Fish Sandwich", "description": "6 oz. cod fillet", "price": "$8.99 / $11.99" }
+      ]
+    },
+    {
+      "category": "Seafood",
+      "note": "Served with fries, salad, and tartar sauce",
+      "items": [
+        { "name": "Fish & Chips", "description": "Battered cod with fries", "price": "$15.99" },
+        { "name": "Clam Strips", "description": "Fried clam strips with fries", "price": "$15.99" }
+      ]
+    },
+    {
+      "category": "Catering",
+      "note": "24-hour notice required. Half Pan (8-10 people) | Full Pan (18-20 people)",
+      "items": [
+        { "name": "Plain Ziti", "description": "Ziti with sauce", "price": "$30 / $50" },
+        { "name": "Baked Ziti", "description": "Baked ziti with cheese", "price": "$40 / $70" },
+        { "name": "Meatball or Sausage with Ziti", "description": "Pasta with meatballs or sausage", "price": "$45 / $80" },
+        { "name": "Sausages with Peppers", "description": "Italian sausage and peppers", "price": "$45 / $90" },
+        { "name": "Tossed Salad", "description": "Large tossed salad", "price": "$25 / $45" },
+        { "name": "Caesar Salad", "description": "Large Caesar salad", "price": "$35 / $55" }
+      ]
+    },
+    {
+      "category": "Desserts & Beverages",
+      "items": [
+        { "name": "Cheesecake", "description": "Slice of cheesecake", "price": "$4.99" },
+        { "name": "Chocolate Cake", "description": "Slice of chocolate cake", "price": "$4.99" },
+        { "name": "2 Liter Soda", "description": "Coke products", "price": "$3.99" },
+        { "name": "20 oz. Soda", "description": "Coke products", "price": "$2.99" },
+        { "name": "Can Soda", "description": "Coke products", "price": "$1.49" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/Family-Pizzeria-110221905814955",
+    "instagram": null,
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Family+Pizzeria+181+Broad+St+Windsor+CT",
+  "about": "Family Pizzeria is a family-owned and operated restaurant located at 181 Broad Street in Windsor, Connecticut. Proudly serving the Hartford, Windsor, and Bloomfield communities, they offer hand-tossed pizzas — including their signature 32-slice party pizza — along with a full menu of grinders, wraps, pasta, salads, and more. Orders must be received at least 30 minutes before closing.",
+  "features": ["Takeout", "Delivery (Windsor only, $2.50 charge, $15 minimum)", "Catering", "Party Platters", "Online Ordering", "Gluten-Free Options", "Lunch Specials (Tue-Fri 11am-3pm)"],
+  "delivery": {
+    "fee": "$2.50",
+    "minimum": "$15.00",
+    "area": "Windsor residents only",
+    "note": "Stops 30 minutes before closing"
+  },
+  "lunchSpecials": {
+    "availability": "Tuesday-Friday, 11 AM - 3 PM",
+    "items": [
+      { "name": "Cheese Pizza Slice", "price": "$3.50" },
+      { "name": "Pepperoni Pizza Slice", "price": "$4.00" },
+      { "name": "Wrap or 8\" Grinder", "description": "Includes chips & soda", "price": "$11.99" },
+      { "name": "Pasta (Ziti or Spaghetti)", "description": "Includes bread, butter, and choice of meatball, sausage, or chicken", "price": "$11.99" }
+    ]
+  },
+  "designBrief": {
+    "industry": "Italian Restaurant / Pizza",
+    "mood": "warm, family-oriented, rustic-Italian",
+    "colorDirection": "deep reds, warm amber, cream, charcoal",
+    "inspiration": "Artisan pizzeria feel. Woodfire, brick textures. Bold menu presentation.",
+    "avoidance": "No generic pizza clip art. No red-white-green Italian flag cliche. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Full-bleed dark background, oversized display type, warm accent CTAs",
+    "uniqueElement": "Animated pizza-making timeline or ingredient spotlight"
+  }
+}
