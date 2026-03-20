@@ -12,6 +12,26 @@
   color: var(--plum-deep);
   margin-bottom: 0;
 }
+.about-owner {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+.about-owner-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  box-shadow: 0 4px 20px rgba(107, 45, 91, 0.15);
+}
+.about-owner-caption {
+  margin-top: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--plum-deep);
+  letter-spacing: 0.02em;
+}
 .about-text {
   color: var(--text-muted);
   font-size: 1.05rem;
