@@ -28,14 +28,11 @@
   align-items: center;
   gap: 0.5rem;
 }
-.logo-icon::before {
-  content: '';
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, var(--accent-warm) 0%, var(--accent) 70%);
-  box-shadow: 0 0 12px rgba(192, 57, 43, 0.4);
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
 }
 .navbar-links {
   display: flex;

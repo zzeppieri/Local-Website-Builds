@@ -11,6 +11,7 @@ const INGREDIENTS = [
 export default function Hero({ name, tagline, ctaText, ctaHref, orderUrl }) {
   return (
     <section className="hero">
+      <div className="hero-bg-photo" aria-hidden="true"></div>
       <div className="hero-bg-texture" aria-hidden="true"></div>
       <div className="hero-inner">
         <p className="hero-est">Est. Family Owned & Operated</p>

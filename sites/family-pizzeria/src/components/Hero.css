@@ -11,6 +11,18 @@
   overflow: hidden;
 }
 
+/* Background photo */
+.hero-bg-photo {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://familypizzawindsorct.com/uploads/1/3/0/6/13067953/856461.jpg?460');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
 /* Brick texture overlay */
 .hero-bg-texture {
   position: absolute;

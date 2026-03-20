@@ -5,7 +5,11 @@ export default function Navbar({ name, links }) {
     <nav className="navbar">
       <div className="navbar-inner">
         <a href="#" className="navbar-logo">
-          <span className="logo-icon" aria-hidden="true"></span>
+          <img
+            src="https://familypizzawindsorct.com/uploads/1/3/0/6/13067953/1451581364.png"
+            alt={`${name} logo`}
+            className="navbar-logo-img"
+          />
           {name}
         </a>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
