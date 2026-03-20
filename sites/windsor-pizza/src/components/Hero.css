@@ -11,6 +11,29 @@
   overflow: hidden;
 }
 
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0.82) 0%,
+    rgba(20, 20, 20, 0.7) 40%,
+    rgba(20, 20, 20, 0.85) 70%,
+    rgba(20, 20, 20, 0.95) 100%
+  );
+  z-index: 1;
+}
+
 /* Diagonal stripe pattern background */
 .hero-bg-pattern {
   position: absolute;
@@ -24,12 +47,13 @@
       rgba(255, 224, 27, 0.015) 42px
     );
   pointer-events: none;
+  z-index: 2;
 }
 
 .hero-inner {
   max-width: 900px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   animation: slideUp 0.8s ease-out;
 }
 

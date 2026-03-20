@@ -1,11 +1,20 @@
 import './Hero.css'
 
-export default function Hero({ name, tagline, ctaText, ctaHref, phone, features }) {
+export default function Hero({ name, tagline, ctaText, ctaHref, phone, features, heroImage }) {
   const deliveryFeature = features?.find(f => f.toLowerCase().includes('delivery'))
   const pickupFeature = features?.find(f => f.toLowerCase().includes('pickup') && !f.toLowerCase().includes('curbside'))
 
   return (
     <section className="hero">
+      {heroImage && (
+        <img
+          src={heroImage}
+          alt={`${name} signature dish`}
+          className="hero-bg-image"
+          loading="eager"
+        />
+      )}
+      <div className="hero-bg-overlay"></div>
       <div className="hero-bg-pattern"></div>
       <div className="hero-inner">
         <div className="hero-badge">Est. Windsor, CT</div>

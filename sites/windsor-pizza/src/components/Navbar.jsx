@@ -1,10 +1,20 @@
 import './Navbar.css'
 
-export default function Navbar({ name, links }) {
+export default function Navbar({ name, links, logoUrl }) {
   return (
     <nav className="navbar">
       <div className="navbar-inner">
         <a href="#" className="navbar-logo">
+          {logoUrl ? (
+            <img
+              src={logoUrl}
+              alt={`${name} logo`}
+              className="logo-img"
+              width="44"
+              height="44"
+              loading="eager"
+            />
+          ) : null}
           <span className="logo-text">{name}</span>
         </a>
         <input type="checkbox" id="nav-toggle" className="nav-toggle" />
