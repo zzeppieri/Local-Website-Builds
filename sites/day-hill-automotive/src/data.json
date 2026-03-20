@@ -80,11 +80,11 @@
     }
   ],
   "certifications": [
-    "NAPA AutoCare Center",
-    "ASE Certified Mechanics",
-    "BBB Accredited",
-    "AAA Affiliated",
-    "CarFax Certified"
+    { "name": "NAPA AutoCare Center", "image": "https://dayhillauto.com/Files/images/napa-autocare.png" },
+    { "name": "ASE Certified Mechanics", "image": "https://dayhillauto.com/Files/images/ase.png" },
+    { "name": "BBB Accredited", "image": "https://dayhillauto.com/Files/images/bbb.png" },
+    { "name": "AAA Affiliated", "image": "https://dayhillauto.com/Files/images/aaa.png" },
+    { "name": "CarFax Certified", "image": "https://dayhillauto.com/Files/images/carfax.png" }
   ],
   "socialLinks": {
     "facebook": "https://www.facebook.com/DAYHILLAUTOMOTIVE",

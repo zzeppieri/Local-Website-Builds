@@ -25,6 +25,16 @@ export default function About({ about, features }) {
       <div className="section-inner about-inner reveal" ref={ref}>
         <span className="section-label">Who We Are</span>
         <h2 className="about-heading">About Day Hill Automotive</h2>
+        <div className="about-photo-wrapper">
+          <img
+            src="https://dayhillauto.com/Files/images/team.jpg"
+            alt="The Day Hill Automotive team — ASE certified mechanics serving Windsor CT since 1979"
+            className="about-team-photo"
+            loading="lazy"
+            width="760"
+            height="420"
+          />
+        </div>
         <p className="about-text">{about}</p>
         {features && features.length > 0 && (
           <div className="about-features">

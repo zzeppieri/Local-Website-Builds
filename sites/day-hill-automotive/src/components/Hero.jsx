@@ -55,6 +55,13 @@ export default function Hero({ name, tagline, ctaText, ctaHref, phone, rating, r
 
   return (
     <section className="hero">
+      <div className="hero-bg-image" aria-hidden="true">
+        <img
+          src="https://dayhillauto.com/Files/images/welcome-full.png"
+          alt=""
+          loading="eager"
+        />
+      </div>
       <div className="hero-grid-overlay" aria-hidden="true"></div>
       <div className="hero-inner">
         <div className="hero-content">
