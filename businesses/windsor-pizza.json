@@ -1,0 +1,117 @@
+{
+  "slug": "windsor-pizza",
+  "name": "Windsor Pizza",
+  "tagline": "Pizza, Pasta & More — Delivered to Your Door",
+  "type": "restaurant",
+  "address": {
+    "street": "396 Windsor Ave",
+    "city": "Windsor",
+    "state": "CT",
+    "zip": "06095"
+  },
+  "phone": "(860) 987-9898",
+  "email": null,
+  "website": "https://windsorpizzeria.com",
+  "hours": [
+    { "days": "Mon-Sun", "open": "11:00 AM", "close": "10:00 PM" }
+  ],
+  "services": [
+    {
+      "category": "Pizza",
+      "items": [
+        { "name": "Cheese Pizza", "description": "Classic cheese pizza with house-made sauce and mozzarella", "price": "$12.00" },
+        { "name": "Extreme Pizza", "description": "Loaded specialty pizza with premium toppings", "price": "$15.45" },
+        { "name": "Buffalo Chicken Pizza", "description": "Spicy buffalo chicken with mozzarella and ranch drizzle", "price": "$14.95" },
+        { "name": "Mediterranean Pizza", "description": "Mediterranean-inspired toppings with fresh vegetables and feta", "price": "$14.95" },
+        { "name": "Margherita White Pizza", "description": "White pizza with fresh mozzarella, tomatoes, and basil", "price": "$14.45" }
+      ]
+    },
+    {
+      "category": "Appetizers",
+      "items": [
+        { "name": "Mozzarella Sticks", "description": "Golden-fried mozzarella sticks served with marinara", "price": "$7.95" },
+        { "name": "Chicken Wings", "description": "Crispy wings with your choice of sauce", "price": "$10.95" },
+        { "name": "Fried Calamari", "description": "Lightly breaded and fried calamari rings", "price": "$10.95" },
+        { "name": "Onion Rings", "description": "Crispy beer-battered onion rings", "price": "$6.50" },
+        { "name": "French Fries", "description": "Classic golden fries", "price": "$4.75" }
+      ]
+    },
+    {
+      "category": "Salads",
+      "items": [
+        { "name": "Garden Salad", "description": "Mixed greens with fresh vegetables and choice of dressing", "price": "$8.00" },
+        { "name": "Caesar Salad", "description": "Romaine lettuce, croutons, parmesan, and Caesar dressing", "price": "$9.50" },
+        { "name": "Greek Salad", "description": "Mixed greens with feta, olives, peppers, and Greek dressing", "price": "$10.50" },
+        { "name": "Antipasto Salad", "description": "Italian meats, cheese, vegetables, and olives over mixed greens", "price": "$13.50" },
+        { "name": "Chef's Salad", "description": "Mixed greens topped with turkey, ham, cheese, and egg", "price": "$12.50" }
+      ]
+    },
+    {
+      "category": "Sandwiches & Subs",
+      "items": [
+        { "name": "Italian Sub", "description": "Classic Italian cold cuts with lettuce, tomato, and Italian dressing", "price": "$10.95" },
+        { "name": "Chicken Parmigiana Sub", "description": "Breaded chicken cutlet with marinara and melted mozzarella", "price": "$11.95" },
+        { "name": "Philly Cheesesteak", "description": "Shaved steak with peppers, onions, and melted cheese", "price": "$12.95" },
+        { "name": "Club Sandwich", "description": "Triple-decker with turkey, bacon, lettuce, and tomato", "price": "$13.95" },
+        { "name": "Buffalo Chicken Wrap", "description": "Crispy buffalo chicken with lettuce, tomato, and ranch in a flour tortilla", "price": "$10.95" }
+      ]
+    },
+    {
+      "category": "Pasta",
+      "items": [
+        { "name": "Spaghetti & Meatballs", "description": "Spaghetti with house-made meatballs and marinara sauce", "price": "$13.95" },
+        { "name": "Baked Ziti", "description": "Ziti pasta baked with ricotta, mozzarella, and marinara", "price": "$13.95" },
+        { "name": "Chicken Parmigiana Dinner", "description": "Breaded chicken cutlet with marinara and mozzarella over pasta", "price": "$16.95" },
+        { "name": "Eggplant Parmigiana", "description": "Breaded eggplant with marinara and melted mozzarella over pasta", "price": "$15.95" },
+        { "name": "Lasagna", "description": "Layered pasta with meat sauce, ricotta, and mozzarella", "price": "$17.95" }
+      ]
+    },
+    {
+      "category": "Seafood & Chicken",
+      "items": [
+        { "name": "Fish & Chips", "description": "Beer-battered cod with golden fries and coleslaw", "price": "$14.95" },
+        { "name": "Fried Shrimp Dinner", "description": "Crispy fried shrimp with fries and coleslaw", "price": "$16.75" },
+        { "name": "Chicken Tenders", "description": "Crispy chicken tenders with fries and dipping sauce", "price": "$12.25" },
+        { "name": "Fried Calamari Dinner", "description": "Generous portion of fried calamari with fries and salad", "price": "$18.75" }
+      ]
+    },
+    {
+      "category": "Desserts & Beverages",
+      "items": [
+        { "name": "Cheesecake", "description": "Rich and creamy New York-style cheesecake", "price": "$5.75" },
+        { "name": "Chocolate Cake", "description": "Decadent chocolate layer cake", "price": "$5.75" },
+        { "name": "Fried Dough", "description": "Golden fried dough dusted with powdered sugar", "price": "$5.00" },
+        { "name": "Soda (Can)", "description": "Assorted sodas", "price": "$1.25" },
+        { "name": "Bottled Water", "description": "Purified bottled water", "price": "$1.50" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": null,
+    "instagram": "https://instagram.com/windsorpizzaovereverything",
+    "yelp": null,
+    "google": null
+  },
+  "googleMapsEmbedQuery": "Windsor+Pizza,+396+Windsor+Ave,+Windsor,+CT+06095",
+  "about": "Windsor Pizza has been proudly serving the Windsor, CT community for over 16 years, specializing in pizza, pasta, salads, wings, and more. As an independently operated neighborhood pizzeria, they are committed to quality ingredients and generous portions at fair prices. With delivery, pickup, and curbside options available daily, Windsor Pizza makes it easy to enjoy a delicious meal whether you are dining at home or on the go.",
+  "features": [
+    "Delivery (56-71 min)",
+    "Pickup (15-30 min)",
+    "Curbside pickup available",
+    "Contactless delivery",
+    "Scheduled orders accepted",
+    "Credit cards accepted",
+    "Open 7 days a week",
+    "Serving Windsor for 16+ years",
+    "Bundle deals & party specials available"
+  ],
+  "designBrief": {
+    "industry": "Pizza Restaurant",
+    "mood": "bold, urban, energetic, late-night",
+    "colorDirection": "deep charcoal, electric yellow, bright red accents, black",
+    "inspiration": "Bold street-food energy. Dark palette, condensed sans-serif. Urban, delivery-focused.",
+    "avoidance": "No warm/rustic tones (that's Family Pizzeria). No light/minimal (that's Village Pizza). Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Dark background, oversized bold condensed type, neon-inspired accent color",
+    "uniqueElement": "Animated neon-style menu category highlights or delivery zone map"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "bocasa-beauty-spa",
+  "name": "Bocasa Beauty Spa",
+  "tagline": "Elegance in Every Detail",
+  "type": "salon",
+  "address": {
+    "street": "1 Concorde Way",
+    "city": "Windsor Locks",
+    "state": "CT",
+    "zip": "06096"
+  },
+  "phone": "(860) 292-1574",
+  "email": null,
+  "website": "https://windsorlocksnailsalon.com",
+  "hours": [
+    { "days": "Mon", "open": "Closed", "close": "Closed" },
+    { "days": "Tue-Fri", "open": "10:00 AM", "close": "7:00 PM" },
+    { "days": "Sat", "open": "10:00 AM", "close": "5:00 PM" },
+    { "days": "Sun", "open": "Closed", "close": "Closed" }
+  ],
+  "services": [
+    {
+      "category": "Eyelash Extensions",
+      "items": [
+        { "name": "Classic Full Set", "description": "Natural-looking individual lash extensions applied one-by-one for a subtle, elegant look", "price": "Call for pricing" },
+        { "name": "Volume Full Set", "description": "Multiple lightweight extensions per natural lash for a fuller, more dramatic effect", "price": "Call for pricing" },
+        { "name": "Lash Fill (2-3 weeks)", "description": "Maintenance fill to keep your lash extensions looking fresh and full", "price": "Call for pricing" },
+        { "name": "Lash Removal", "description": "Safe professional removal of eyelash extensions", "price": "Call for pricing" }
+      ]
+    },
+    {
+      "category": "Microblading",
+      "items": [
+        { "name": "Microblading Initial Session", "description": "Semi-permanent eyebrow tattooing with custom shaping and color matching, includes follow-up appointment", "price": "Call for pricing" },
+        { "name": "Microblading Touch-Up", "description": "Follow-up session to perfect your brows after initial treatment", "price": "Call for pricing" }
+      ]
+    },
+    {
+      "category": "Nail Services",
+      "items": [
+        { "name": "Classic Manicure", "description": "Traditional manicure with nail shaping, cuticle care, and polish", "price": "Call for pricing" },
+        { "name": "Gel Manicure", "description": "Long-lasting gel polish manicure with chip-resistant finish", "price": "Call for pricing" },
+        { "name": "Acrylic Full Set", "description": "Full set of acrylic nail enhancements with your choice of shape and color", "price": "Call for pricing" },
+        { "name": "Classic Pedicure", "description": "Relaxing pedicure with therapeutic foot treatment, nail shaping, and polish", "price": "Call for pricing" },
+        { "name": "Gel Pedicure", "description": "Spa pedicure finished with long-lasting gel polish", "price": "Call for pricing" }
+      ]
+    }
+  ],
+  "socialLinks": {
+    "facebook": "https://facebook.com/bocasaspa",
+    "instagram": "https://instagram.com/beautybybocasa",
+    "yelp": null,
+    "google": "https://maps.app.goo.gl/PiFfTR4trUBvJvB69"
+  },
+  "googleMapsEmbedQuery": "Bocasa+Beauty+Spa,+1+Concorde+Way,+Windsor+Locks,+CT+06096",
+  "about": "Bocasa Beauty Spa is a premier beauty destination in Windsor Locks, CT, specializing in eyelash extensions, microblading, and professional nail services. Their skilled team of makeup artists and beauty technicians provide personalized treatments in a serene, elegant setting. Whether you are looking for natural-looking lash extensions that last up to a month, perfectly shaped semi-permanent brows through microblading, or a relaxing manicure and pedicure with gel polish or acrylics, Bocasa Beauty Spa delivers polished results with meticulous attention to detail.",
+  "features": [
+    "Eyelash extension specialists",
+    "Microblading & semi-permanent makeup",
+    "Full nail salon services",
+    "Gel polish & acrylic nails",
+    "Therapeutic hand & foot treatments",
+    "Accepts all major credit cards & cash"
+  ],
+  "designBrief": {
+    "industry": "Nail Salon & Beauty Spa",
+    "mood": "elegant, serene, polished, inviting",
+    "colorDirection": "soft rose, champagne gold, ivory, muted mauve",
+    "inspiration": "Upscale nail salon. Soft textures, elegant type, calming palette.",
+    "avoidance": "No garish pinks or purples. No clip art nails. Must not reuse fonts from other sites in this project.",
+    "heroStyle": "Soft gradient background, refined serif heading, subtle shimmer effect",
+    "uniqueElement": "Service cards with gentle hover animations and price reveal"
+  }
+}
