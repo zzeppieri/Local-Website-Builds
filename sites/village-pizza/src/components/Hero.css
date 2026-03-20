@@ -6,40 +6,28 @@
   text-align: center;
   padding: 0 1.5rem;
   padding-top: var(--nav-height);
-  background: var(--bg);
   position: relative;
   overflow: hidden;
 }
 
-/* Subtle decorative gradient orb */
-.hero::before {
-  content: '';
+/* Background image layer */
+.hero-bg {
   position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(125, 155, 118, 0.12) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: floatOrb 8s ease-in-out infinite;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -10%;
-  left: -5%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(196, 117, 91, 0.08) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: floatOrb 10s ease-in-out infinite reverse;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@keyframes floatOrb {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(20px, -30px); }
+/* Dark overlay for text readability */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(44, 44, 44, 0.55) 0%,
+    rgba(44, 44, 44, 0.65) 100%
+  );
 }
 
 .hero-inner {
@@ -51,21 +39,23 @@
   font-family: var(--font-display);
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
   line-height: 1.05;
   margin-bottom: 1.25rem;
   letter-spacing: -0.03em;
   animation: fadeInUp 0.7s ease-out both;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 .hero-tagline {
   font-size: clamp(1.05rem, 2.5vw, 1.35rem);
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2.5rem;
   line-height: 1.5;
   max-width: 520px;
   margin-left: auto;
   margin-right: auto;
   animation: fadeInUp 0.7s ease-out 0.15s both;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
 }
 .hero-cta {
   display: inline-block;
@@ -93,11 +83,13 @@
   gap: 0.5rem;
   margin-top: 1.5rem;
   padding: 0.5rem 1rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.92);
   animation: fadeInUp 0.7s ease-out 0.45s both;
 }
 .hero-delivery-badge .dot {

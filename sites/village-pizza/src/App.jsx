@@ -2,6 +2,7 @@ import data from './data.json'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Services from './components/Services'
+import Gallery from './components/Gallery'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -27,6 +28,7 @@ export default function App() {
           services={data.services}
           type="menu"
         />
+        <Gallery />
         <About about={data.about} features={data.features} />
         <Contact
           phone={data.phone}
